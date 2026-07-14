@@ -1,3 +1,5 @@
+import { PhotoGallery } from "./PhotoGallery";
+
 const milestones = [
   { value: "5", label: "branches visited" },
   { value: "30+", label: "new members baptized" },
@@ -294,14 +296,7 @@ export default function Home() {
             <h2>People, places, and the work.</h2>
             <p>From Honiara to Malaita, every photograph carries a story we are still learning how to tell.</p>
           </header>
-          <div className="gallery-grid">
-            {gallery.map((photo) => (
-              <figure className={photo.className} key={photo.src}>
-                <img src={photo.src} alt={photo.alt} />
-                <figcaption>{photo.caption}</figcaption>
-              </figure>
-            ))}
-          </div>
+          <PhotoGallery photos={gallery} />
         </section>
 
         <section className="service-strip">
