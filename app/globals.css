@@ -146,10 +146,10 @@ blockquote { margin: 50px -55px 62px 64px; padding: 36px 42px; background: var(-
 .gallery-grid figcaption { padding: 11px 3px 0; color: var(--ink-soft); font-size: 10px; font-weight: 750; line-height: 1.45; letter-spacing: 0.06em; text-transform: uppercase; }
 
 .lightbox { position: fixed; inset: 0; z-index: 1000; display: grid; place-items: center; padding: 28px; background: rgba(23, 59, 58, 0.16); }
-.lightbox-panel { position: relative; width: min(1120px, 92vw); max-height: 90vh; padding: 46px 18px 16px; border: 1px solid rgba(23, 59, 58, 0.22); border-radius: 5px; display: grid; grid-template-columns: 48px minmax(0, 1fr) 48px; gap: 14px; align-items: center; background: var(--paper-light); box-shadow: 0 22px 60px rgba(23, 59, 58, 0.22); }
-.lightbox-figure { min-width: 0; max-height: calc(90vh - 62px); margin: 0; display: flex; flex-direction: column; align-items: center; }
-.lightbox-figure img { max-width: 100%; max-height: calc(90vh - 112px); width: auto; height: auto; display: block; object-fit: contain; border: 1px solid rgba(23, 59, 58, 0.16); }
-.lightbox-figure figcaption { width: 100%; padding-top: 11px; display: flex; justify-content: space-between; gap: 24px; color: var(--ink); font-size: 11px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
+.lightbox-panel { position: relative; width: min(1120px, 92vw); height: min(760px, 90vh); padding: 46px 18px 16px; border: 1px solid rgba(23, 59, 58, 0.22); border-radius: 5px; display: grid; grid-template-columns: 48px minmax(0, 1fr) 48px; gap: 14px; align-items: center; background: var(--paper-light); box-shadow: 0 22px 60px rgba(23, 59, 58, 0.22); }
+.lightbox-figure { min-width: 0; height: 100%; margin: 0; display: grid; grid-template-rows: minmax(0, 1fr) 42px; }
+.lightbox-figure img { width: 100%; height: 100%; display: block; object-fit: contain; border: 1px solid rgba(23, 59, 58, 0.16); background: rgba(23, 59, 58, 0.035); }
+.lightbox-figure figcaption { width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 24px; color: var(--ink); font-size: 11px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
 .lightbox-figure small { flex: 0 0 auto; color: var(--ink-soft); font: 600 11px/1.5 var(--font-geist-mono), monospace; }
 .lightbox-close,
 .lightbox-nav { width: 44px; height: 44px; border: 1px solid rgba(23, 59, 58, 0.24); border-radius: 50%; display: grid; place-items: center; background: var(--paper-light); color: var(--ink); cursor: pointer; transition: background 180ms ease, border-color 180ms ease, color 180ms ease; }
@@ -227,9 +227,8 @@ footer > a:last-child { font-weight: 700; }
   .milestone strong { font-size: 46px; }
   .gallery-grid { grid-template-columns: 1fr; gap: 30px; }
   .lightbox { padding: 10px; }
-  .lightbox-panel { width: calc(100vw - 20px); max-height: 92vh; padding: 44px 10px 12px; grid-template-columns: 44px minmax(0, 1fr) 44px; gap: 6px; }
-  .lightbox-figure { max-height: calc(92vh - 56px); }
-  .lightbox-figure img { max-height: calc(92vh - 108px); }
+  .lightbox-panel { width: calc(100vw - 20px); height: min(680px, 92vh); padding: 44px 10px 12px; grid-template-columns: 44px minmax(0, 1fr) 44px; gap: 6px; }
+  .lightbox-figure { grid-template-rows: minmax(0, 1fr) 62px; }
   .lightbox-figure figcaption { align-items: flex-start; font-size: 10px; }
   .service-photos { grid-template-columns: 1fr; }
   .service-photos figure { height: 290px; }
