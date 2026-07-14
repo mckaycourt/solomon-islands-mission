@@ -7,6 +7,12 @@ const milestones = [
 
 const gallery = [
   {
+    src: "/photos/bags-arrive.jpg",
+    alt: "President and Sister Court with missionaries and their recovered luggage",
+    caption: "The bags finally arrive",
+    className: "portrait",
+  },
+  {
     src: "/photos/opening-celebration.jpg",
     alt: "Solomon Islanders performing at the celebration opening the new mission",
     caption: "The celebration of the opening of the Solomon Islands Honiara Mission · June 27, 2026",
@@ -49,6 +55,48 @@ const gallery = [
     className: "portrait tall",
   },
   {
+    src: "/photos/local-food.jpg",
+    alt: "A whole cooked fish served with green beans",
+    caption: "New country, new food",
+    className: "landscape",
+  },
+  {
+    src: "/photos/hero-national-news.jpg",
+    alt: "President and Sister Court speaking with a reporter in Honiara",
+    caption: "National Television News",
+    className: "landscape",
+  },
+  {
+    src: "/photos/honiara-traffic.jpg",
+    alt: "Night traffic on a road in Honiara",
+    caption: "Learning to drive on the other side of the road",
+    className: "portrait tall",
+  },
+  {
+    src: "/photos/opening-youth.jpg",
+    alt: "Young Solomon Island women at the mission opening celebration",
+    caption: "Amazingly faithful Solomon Islanders",
+    className: "landscape",
+  },
+  {
+    src: "/photos/opening-men.jpg",
+    alt: "Two Solomon Island men smiling at the mission opening celebration",
+    caption: "Look at the light in all these eyes!",
+    className: "landscape",
+  },
+  {
+    src: "/photos/opening-boys.jpg",
+    alt: "Three boys smiling at the mission opening celebration",
+    caption: "The celebration of the opening of the mission",
+    className: "landscape",
+  },
+  {
+    src: "/photos/opening-girls.jpg",
+    alt: "Four girls at the mission opening celebration",
+    caption: "The celebration of the opening of the mission",
+    className: "landscape",
+  },
+  {
     src: "/photos/branch-members.jpg",
     alt: "Missionaries standing with local branch members",
     caption: "Faithful members and missionaries",
@@ -60,20 +108,50 @@ const gallery = [
     caption: "Walking through Green Valley",
     className: "portrait tall",
   },
+  {
+    src: "/photos/district-leaders.jpg",
+    alt: "President and Sister Court with district and branch leaders and their wives",
+    caption: "First meeting with the District Presidency and Branch Presidents · June 24",
+    className: "wide",
+  },
+  {
+    src: "/photos/senior-missionaries.jpg",
+    alt: "President and Sister Court with the senior missionaries",
+    caption: "Our amazing senior missionaries · June 24",
+    className: "wide",
+  },
+  {
+    src: "/photos/naha-sisters.jpg",
+    alt: "Sister Kagl and Sister Takifu walking through a neighborhood in Naha",
+    caption: "Sister Kagl and Sister Takifu · Naha",
+    className: "wide",
+  },
+  {
+    src: "/photos/water-tanks.jpg",
+    alt: "Blue water tanks donated for humanitarian aid",
+    caption: "Water tanks are part of the humanitarian aid being donated",
+    className: "landscape",
+  },
+  {
+    src: "/photos/wheelchair.jpg",
+    alt: "A Solomon Islander using a donated wheelchair",
+    caption: "Wheelchairs are part of the humanitarian aid being donated",
+    className: "landscape",
+  },
 ];
 
 export default function Home() {
   return (
     <>
       <header className="site-header">
-        <a className="brand" href="#top" aria-label="Letters from Honiara, home">
-          <span className="brand-mark">H</span>
-          <span>Letters from Honiara</span>
+        <a className="brand" href="#top" aria-label="Letters from the Solomon Islands, home">
+          <span className="brand-mark">S</span>
+          <span>Letters from the Solomon Islands</span>
         </a>
         <nav aria-label="Primary navigation">
           <a href="#letter">The letter</a>
           <a href="#photographs">Photographs</a>
-          <a className="nav-button" href="mailto:?subject=Letters%20from%20Honiara%20%E2%80%94%20Month%20One">
+          <a className="nav-button" href="mailto:?subject=Letters%20from%20the%20Solomon%20Islands%20%E2%80%94%20Month%20One">
             Share
           </a>
         </nav>
@@ -83,10 +161,10 @@ export default function Home() {
         <article className="postcard" aria-labelledby="post-title">
           <div className="hero-photo">
             <img
-              src="/photos/hero-national-news.jpg"
-              alt="President and Sister Court speaking with a reporter in Honiara"
+              src="/photos/hero-sunset.jpg"
+              alt="President and Sister Court together near the water at sunset"
             />
-            <p className="photo-caption">Called on the spot for national television news · Honiara</p>
+            <p className="photo-caption">President &amp; Sister Court · Solomon Islands</p>
           </div>
 
           <div className="letter-face">
@@ -277,7 +355,7 @@ export default function Home() {
       </main>
 
       <footer>
-        <a className="brand" href="#top"><span className="brand-mark">H</span><span>Letters from Honiara</span></a>
+        <a className="brand" href="#top"><span className="brand-mark">S</span><span>Letters from the Solomon Islands</span></a>
         <p>Solomon Islands Honiara Mission · 2026</p>
         <a href="#top">Back to top ↑</a>
       </footer>

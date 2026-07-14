@@ -21,17 +21,17 @@ export async function generateMetadata(): Promise<Metadata> {
 
   return {
     metadataBase,
-    title: "Month One | Letters from Honiara",
+    title: "Month One | Letters from the Solomon Islands",
     description: "The first month of the Solomon Islands Honiara Mission: delayed bags, answered prayers, baptisms, and a joyful beginning.",
     openGraph: {
-      title: "Letters from Honiara — Month One",
+      title: "Letters from the Solomon Islands — Month One",
       description: "A bullet train, twelve delayed bags, and a joyful beginning on the other side of the world.",
       type: "article",
-      images: [{ url: "/og.png", width: 1200, height: 630, alt: "Letters from Honiara — Month One" }],
+      images: [{ url: "/og.png", width: 1200, height: 630, alt: "Letters from the Solomon Islands — Month One" }],
     },
     twitter: {
       card: "summary_large_image",
-      title: "Letters from Honiara — Month One",
+      title: "Letters from the Solomon Islands — Month One",
       description: "The first dispatch from the Solomon Islands Honiara Mission.",
       images: ["/og.png"],
     },
