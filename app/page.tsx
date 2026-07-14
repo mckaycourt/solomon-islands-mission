@@ -7,12 +7,6 @@ const milestones = [
 
 const gallery = [
   {
-    src: "/photos/bags-arrive.jpg",
-    alt: "President and Sister Court with missionaries and their recovered luggage",
-    caption: "The bags finally arrive",
-    className: "portrait",
-  },
-  {
     src: "/photos/opening-celebration.jpg",
     alt: "Solomon Islanders performing at the celebration opening the new mission",
     caption: "The celebration of the opening of the Solomon Islands Honiara Mission · June 27, 2026",
@@ -47,12 +41,6 @@ const gallery = [
     alt: "Missionaries and newly baptized members on a beach in Malaita",
     caption: "Auki District baptisms on Malaita · July 11",
     className: "wide",
-  },
-  {
-    src: "/photos/fauabu-baptisms.jpg",
-    alt: "Missionaries and newly baptized members at Fauabu on Malaita",
-    caption: "Fauabu baptisms · July 11",
-    className: "portrait tall",
   },
   {
     src: "/photos/local-food.jpg",
@@ -125,18 +113,6 @@ const gallery = [
     alt: "Sister Kagl and Sister Takifu walking through a neighborhood in Naha",
     caption: "Sister Kagl and Sister Takifu · Naha",
     className: "wide",
-  },
-  {
-    src: "/photos/water-tanks.jpg",
-    alt: "Blue water tanks donated for humanitarian aid",
-    caption: "Water tanks are part of the humanitarian aid being donated",
-    className: "landscape",
-  },
-  {
-    src: "/photos/wheelchair.jpg",
-    alt: "A Solomon Islander using a donated wheelchair",
-    caption: "Wheelchairs are part of the humanitarian aid being donated",
-    className: "landscape",
   },
 ];
 
