@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { letters } from "./letters";
 
 export default function LettersHome() {
@@ -6,13 +7,13 @@ export default function LettersHome() {
   return (
     <>
       <header className="site-header publication-header">
-        <a className="brand" href="/" aria-label="Letters from the Solomon Islands, home">
+        <Link className="brand" href="/" aria-label="Letters from the Solomon Islands, home">
           <span className="brand-mark">S</span>
           <span>Letters from the Solomon Islands</span>
-        </a>
+        </Link>
         <nav aria-label="Primary navigation">
           <a href="#letters">Letters</a>
-          <a className="nav-button" href={`/letters/${latestLetter.slug}`}>Latest letter</a>
+          <Link className="nav-button" href={`/letters/${latestLetter.slug}`}>Latest letter</Link>
         </nav>
       </header>
 
@@ -25,7 +26,7 @@ export default function LettersHome() {
               Dispatches from President and Sister Court about the people, places, miracles, and everyday work of their mission.
             </p>
             <div className="home-actions">
-              <a className="primary-link" href={`/letters/${latestLetter.slug}`}>Read the latest letter <span>→</span></a>
+              <Link className="primary-link" href={`/letters/${latestLetter.slug}`}>Read the latest letter <span>→</span></Link>
               <a className="text-link" href="#letters">Browse all letters ↓</a>
             </div>
           </div>
@@ -47,19 +48,19 @@ export default function LettersHome() {
           <div className="letter-list">
             {letters.map((letter) => (
               <article className="letter-card" key={letter.slug}>
-                <a className="letter-card-image" href={`/letters/${letter.slug}`} aria-label={`Read ${letter.title}`}>
+                <Link className="letter-card-image" href={`/letters/${letter.slug}`} aria-label={`Read ${letter.title}`}>
                   <img src={letter.image} alt={letter.imageAlt} />
                   <span>Dispatch {letter.dispatch}</span>
-                </a>
+                </Link>
                 <div className="letter-card-copy">
                   <p className="eyebrow">{letter.date}</p>
-                  <h3><a href={`/letters/${letter.slug}`}>{letter.title}</a></h3>
+                  <h3><Link href={`/letters/${letter.slug}`}>{letter.title}</Link></h3>
                   <p>{letter.excerpt}</p>
                   <div className="letter-card-meta">
                     <span>{letter.author}</span>
                     <span>{letter.readingTime}</span>
                   </div>
-                  <a className="read-letter-link" href={`/letters/${letter.slug}`}>Read the letter <span>→</span></a>
+                  <Link className="read-letter-link" href={`/letters/${letter.slug}`}>Read the letter <span>→</span></Link>
                 </div>
               </article>
             ))}
@@ -68,7 +69,7 @@ export default function LettersHome() {
       </main>
 
       <footer>
-        <a className="brand" href="/"><span className="brand-mark">S</span><span>Letters from the Solomon Islands</span></a>
+        <Link className="brand" href="/"><span className="brand-mark">S</span><span>Letters from the Solomon Islands</span></Link>
         <p>Solomon Islands Honiara Mission · 2026</p>
         <a href="#top">Back to top ↑</a>
       </footer>

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { PhotoGallery } from "../../PhotoGallery";
 
 export const metadata: Metadata = {
@@ -133,12 +134,12 @@ export default function MonthOneLetter() {
   return (
     <>
       <header className="site-header">
-        <a className="brand" href="/" aria-label="Letters from the Solomon Islands, home">
+        <Link className="brand" href="/" aria-label="Letters from the Solomon Islands, home">
           <span className="brand-mark">S</span>
           <span>Letters from the Solomon Islands</span>
-        </a>
+        </Link>
         <nav aria-label="Primary navigation">
-          <a href="/#letters">All letters</a>
+          <Link href="/#letters">All letters</Link>
           <a href="#photographs">Photographs</a>
           <a className="nav-button" href="mailto:?subject=Letters%20from%20the%20Solomon%20Islands%20%E2%80%94%20Month%20One">
             Share
@@ -336,7 +337,7 @@ export default function MonthOneLetter() {
         </section>
 
         <nav className="letter-navigation" aria-label="Letter navigation">
-          <a href="/#letters"><span>←</span><small>Back to</small><strong>All letters</strong></a>
+          <Link href="/#letters"><span>←</span><small>Back to</small><strong>All letters</strong></Link>
           <div>
             <small>Current letter</small>
             <strong>Dispatch 01 · Month One</strong>
@@ -345,7 +346,7 @@ export default function MonthOneLetter() {
       </main>
 
       <footer>
-        <a className="brand" href="/"><span className="brand-mark">S</span><span>Letters from the Solomon Islands</span></a>
+        <Link className="brand" href="/"><span className="brand-mark">S</span><span>Letters from the Solomon Islands</span></Link>
         <p>Solomon Islands Honiara Mission · 2026</p>
         <a href="#top">Back to top ↑</a>
       </footer>

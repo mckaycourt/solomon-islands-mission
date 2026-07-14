@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { headers } from "next/headers";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -13,14 +12,8 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export async function generateMetadata(): Promise<Metadata> {
-  const requestHeaders = await headers();
-  const host = requestHeaders.get("x-forwarded-host") ?? requestHeaders.get("host") ?? "mckaycourt.com";
-  const protocol = requestHeaders.get("x-forwarded-proto") ?? (host.includes("localhost") ? "http" : "https");
-  const metadataBase = new URL(`${protocol}://${host}`);
-
-  return {
-    metadataBase,
+export const metadata: Metadata = {
+    metadataBase: new URL("https://solomonislandsmission.mckaycourt.com"),
     title: "Letters from the Solomon Islands",
     description: "Dispatches from President and Sister Court in the Solomon Islands Honiara Mission.",
     openGraph: {
@@ -35,8 +28,7 @@ export async function generateMetadata(): Promise<Metadata> {
       description: "Dispatches from the Solomon Islands Honiara Mission.",
       images: ["/og.png"],
     },
-  };
-}
+};
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
