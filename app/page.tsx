@@ -118,13 +118,13 @@ export default function Home() {
 
           <div className="story">
             <p className="dropcap">
-              Imagine you are at the Kurikoma-Kōgen Station in Tokyo as a bullet train—not scheduled to stop—roars through. On the outside of the train are handles used to climb onto the top for maintenance. This is the picture Elder Bednar painted for us when we met with him.
+              Imagine you are at the Kurikoma-Kōgen Station in Tokyo, as a bullet train, not scheduled to stop in that station, just roars through. On the outside of the train, there are handles, used to climb onto the top for maintenance. This is the picture Elder Bednar painted for us when we met with him.
             </p>
             <p>
-              Arriving in the mission field as new mission leaders is like standing in that station and grabbing the outside handle. In this, as in many other things he has taught us over the years, he was exactly right. It is difficult to describe.
+              Arriving into the mission field, as new mission leaders, is like standing in a Tokyo train station and grabbing the outside handle of a bullet train, not scheduled to stop at that station. In this, as in many other things he’s taught us over the years, he is a prophet. It is exactly like that, and difficult to really describe.
             </p>
             <p>
-              One thing is not difficult to describe: our growing testimony of the Lord’s words, “I am able to do mine own work.” We have seen that He can and does His own work. We have been invited along for the ride—and what a ride it has already proven to be.
+              One of the things not difficult to describe is our testimony of this line of this verse - “…I am able to do mine own work” (2 Nephi 27:20). We have seen that the Lord can and does His own work! We’ve been invited along for the ride and what a great ride it already has proven to be.
             </p>
 
             <blockquote>
@@ -135,17 +135,29 @@ export default function Home() {
               <p className="section-number">01</p>
               <h3 id="carry-on-heading">Two carry-ons and 119 missing bags</h3>
               <p>
-                At the MTC, Elder Bednar made what sounded like an offhand comment: if you have a carry-on suitcase with a change of clothes and toiletries—and can do your laundry every once in a while—you have everything you need. We listened. Even when the airline tried to check our carry-ons in Los Angeles, we reorganized until they let us keep them.
+                Elder Bednar made an offhand comment when we were having dinner with him and his wife at the MTC. “Susan and I have learned that if you have a carry-on suitcase with a change of clothes and toiletries, and you can do your laundry every once in a while, you have everything you need.
+              </p>
+              <p>
+                Not surprisingly for Kim, but somewhat surprising for me, we listened to that off-hand comment and repacked our carry-ons for the trip to Solomon Islands. It wasn’t easy to keep this counsel either. In Los Angeles, they actually tried to take our carry-ons, saying they were too heavy and so they would have to check them. What? They would weigh the same under the plane, but while wearing name tags for the Church of Jesus Christ of Latter-day Saints you don’t argue. But what we did do was start the process of taking things out and putting them in our backpacks. After about ten minutes of reorganizing and reweighing, she finally gave up and we got our boarding passes.
               </p>
               <figure className="inline-photo right">
                 <img src="/photos/bags-arrive.jpg" alt="President and Sister Court with missionaries and their recovered luggage" />
                 <figcaption>Twelve bags, finally released from Customs.</figcaption>
               </figure>
               <p>
-                Eighteen hours later, after landing in Honiara, an announcement came over the intercom: because of weight restrictions, 119 bags had not been loaded in Fiji. They would arrive on the next flight—four days later. What did we have? Two carry-ons with a change of clothes and toiletries. Thank you, Elder Bednar.
+                Long story short - 18 hours later after landing in Honiara, Solomon Islands, we were waiting at Customs when this announcement came over the intercom - “Passengers of Fiji Airways arriving from Nadi, because of weight restrictions 119 bags were not loaded on the flight. They will be on the next flight - Sunday, June 29th.” It was Wednesday!
               </p>
               <p>
-                When our luggage finally arrived, an elder prayed that the Customs officers’ hearts would be softened. They scanned only three of our twelve bags, opened none of them, and sent us on our way within minutes. After watching other passengers endure hours of inspections and confiscations, that felt like a miracle all its own.
+                What did Kim and I have? We had two carry-ons with a change of clothes and toiletries. Thank you, Elder Bednar.
+              </p>
+              <p>
+                So, for the first six days, we wore the same clothes every day and washed them, but at least we had them. He was totally right. BTW, the kind senior missionaries let Kim borrow some of their clothes too, so it all worked out.
+              </p>
+              <p>
+                How is this a miracle? Well, one, we were able to function for six days while waiting for our bags which we got from Customs on Monday. But the group that got their bags on that first flight had each and every bag so scrutinized. They were put through a scanner, opened and examined. Many lost contents to confiscation and it took hours.
+              </p>
+              <p>
+                But when ours came, one of the Elders that was with us, prayed that their hearts would be softened and we would be able to get our bags (there were two brand new missionaries that flew in on our same flight from Fiji and they didn’t get their bags either). Well, the Customs people couldn’t get us out of there fast enough! They scanned only three of twelve bags and didn’t open a single one. We got out of there in just minutes with nothing confiscated.
               </p>
             </section>
           </div>
@@ -171,10 +183,10 @@ export default function Home() {
             <p className="section-number">02</p>
             <h2>Miracles, meetings, and a tarmac standoff</h2>
             <p>
-              We were welcomed with a celebration for the opening of the mission. We met the elders and sisters, visited five branches for sacrament meetings, showed up on missionaries’ doorsteps, attended two baptismal services for more than thirty new members, welcomed six new missionaries, helped stop two serious cases of malaria, interviewed thirty-eight missionaries, and held our first councils and family home evenings.
+              We have been welcomed, had an event put on by the members to celebrate the opening of the mission, had a Meet the New Mission Leaders meeting with the young Elders and Sisters, visited five of the branches for Sacrament meetings, shown up on the doorsteps of our missionaries, visiting almost all of their homes and apartments, attended two baptismal services of over 30 new members, welcomed 6 new missionaries to the mission, stopped two serious cases of Malaria and countless skin infections, interviewed 38 missionaries so far, had two family home evenings with the missionaries and one Mission Leadership Council and one District Council Meeting and one District Presidency Meeting, all in the first two weeks.
             </p>
             <p>
-              Then there are the things you could never plan for. Four elders boarded a plane to the remote island of Ulawa, only to be told that the aircraft was going somewhere else. They got off—and stood in front of the plane until their bags were unloaded. A literal tarmac standoff. Two more attempts were canceled. Finally, after prayers from both the missionaries and a family who needed to reach the main island before a temple trip, the plane went through.
+              And on top of all of this, countless things that you just can’t even imagine. Picture four elders boarding a plane to Ulawa, a remote island, when they are told that the plane is no longer flying to that island but another island instead. Picture those young men protesting, disembarking the plane, and then standing in front of that plane so it couldn’t leave, until their bags were taken off. Literally, a tarmac standoff! Picture those elders going two more times to the airport, over the course of two weeks, while working in other missionary areas each day, only to be told the flight was cancelled each time. Finally, and miraculously, being able to get there, after one missionary has a prayer answered and a family on that island prays that the plane will come because they need to be on the main island to leave for the temple the next week. Then, it all works out.
             </p>
           </div>
           <figure className="feature-photo">
@@ -188,13 +200,31 @@ export default function Home() {
             <p className="section-number">03</p>
             <h2>“Would you still say yes?”</h2>
             <p>
-              All of this came with the adventure of new food and water, shaking hundreds of hands, learning to drive on the other side of the road, and rarely feeling one hundred percent. There has been almost no time to prepare for anything. More than once we have been put on the spot—including on national television—and felt the needed words come in the very moment we needed them.
+              All this and more while experiencing all the fun and excitement of being in a new country, with new food and water, on the other side of the world from your intestinal tract comfort zone, and shaking hands with hundreds of people. Let’s just say that part of grabbing the bullet train handle, involves grabbing it while not feeling 100%. In some cases, not even feeling 65%.
             </p>
             <p>
-              Kim asked the other day, “Knowing what you know now, would you still say yes to this calling?” We both knew the answer: one hundred percent yes.
+              But it’s like we said, the Lord is in it with us.
             </p>
             <p>
-              Being mission leaders is the best perch from which to see the gathering of Israel across the world. In only a few weeks, we have gained a deeper testimony that God is mindful of every people, in every land.
+              There has been no time to prepare for almost anything. Many times, we are put on the spot, including below with National Television News. But the Lord has been in our minds and hearts and we have felt that we’ve been given in the very moment the things to say.
+            </p>
+            <p>
+              All this while learning to drive on the other side of the road, in a car with the steering wheel on the other side, on roads that are perpetually under construction.
+            </p>
+            <p>
+              Kim asked me the other day, “Knowing what you know now, would you still say yes to this calling?”
+            </p>
+            <p>
+              We both knew the answer to that. 100% yes!
+            </p>
+            <p>
+              Being a Bishop was the best perch from which to see the Lord personally minister to individuals and families.
+            </p>
+            <p>
+              Being Mission Leaders is the best perch from which to see the Gathering of Israel in all the world. In just a few weeks we have a greater testimony of this verse and we know it’s only going to grow more and more -
+            </p>
+            <p>
+              “Behold, I say unto you, I cannot say the smallest part which I feel…Now my brethren, we see that God is mindful of every people, whatsoever land they may be in; yea, he numbereth his people, and his bowels of mercy are over all the earth. Now this is my joy, and my great thanksgiving; yea, and I will give thanks unto my God forever. Amen.” (Alma 26:16,37)
             </p>
           </div>
           <div className="answer-card">
@@ -225,7 +255,7 @@ export default function Home() {
             <p className="kicker">Hands at work</p>
             <h2>Faith expressed in service.</h2>
             <p>
-              Senior missionaries and local leaders carry an extraordinary load—from temple preparation, housing, travel, and finances to humanitarian and self-reliance programs. Water tanks and wheelchairs are part of $1.7 million in humanitarian aid being donated in the Solomon Islands.
+              From this group, members of the Church in the Solomon Islands have everything prepared so that they can go to the temple, a Herculean effort, the mission office including all the travel in and out, all the finances, all the housing needs, almost every administrative aspect of the Church in this country as well as all the Humanitarian and Self-Reliance programs, plus branch auditing. On top of it all, they bless the lives of the young Elders and Sisters with Family Home Evenings and the occasional emergency needs that come with life here as well as each taking a Branch or two and supporting the local leaders with a mounting list of needs. This is an amazing group and thankfully, MORE are ON THE WAY!
             </p>
           </div>
           <div className="service-photos">
@@ -237,7 +267,10 @@ export default function Home() {
         <section className="closing-letter">
           <p className="script">Until next time,</p>
           <p>
-            We love you all and want to thank you for your prayers and support. In a lot of ways, we know this is our mission together. We carry you with us every day.
+            We love you all and we want to thank you for your prayers and support. In a lot of ways, we know this is our mission together. We carry you with us every day!
+          </p>
+          <p>
+            Truth is, we could go on for pages about these missionaries and the members. The faith and the deprivation. The miracles and the challenges. But we’ll save that for next time! But here are some more pics!
           </p>
           <p className="signature">With love,<br /><strong>President &amp; Sister Court</strong></p>
         </section>
