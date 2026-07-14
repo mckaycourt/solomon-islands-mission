@@ -67,23 +67,22 @@ export function PhotoGallery({ photos }: { photos: readonly Photo[] }) {
       {activePhoto && activeIndex !== null && (
         <div
           className="lightbox"
-          role="dialog"
-          aria-modal="true"
-          aria-label="Expanded photograph"
           onMouseDown={(event) => {
             if (event.target === event.currentTarget) close();
           }}
         >
-          <button ref={closeButtonRef} className="lightbox-close" type="button" onClick={close} aria-label="Close expanded photograph">×</button>
-          <button className="lightbox-nav lightbox-previous" type="button" onClick={showPrevious} aria-label="Previous photograph">←</button>
-          <figure className="lightbox-figure">
-            <img src={activePhoto.src} alt={activePhoto.alt} />
-            <figcaption>
-              <span>{activePhoto.caption}</span>
-              <small>{activeIndex + 1} / {photos.length}</small>
-            </figcaption>
-          </figure>
-          <button className="lightbox-nav lightbox-next" type="button" onClick={showNext} aria-label="Next photograph">→</button>
+          <div className="lightbox-panel" role="dialog" aria-modal="true" aria-label="Expanded photograph">
+            <button ref={closeButtonRef} className="lightbox-close" type="button" onClick={close} aria-label="Close expanded photograph">×</button>
+            <button className="lightbox-nav lightbox-previous" type="button" onClick={showPrevious} aria-label="Previous photograph">←</button>
+            <figure className="lightbox-figure">
+              <img src={activePhoto.src} alt={activePhoto.alt} />
+              <figcaption>
+                <span>{activePhoto.caption}</span>
+                <small>{activeIndex + 1} / {photos.length}</small>
+              </figcaption>
+            </figure>
+            <button className="lightbox-nav lightbox-next" type="button" onClick={showNext} aria-label="Next photograph">→</button>
+          </div>
         </div>
       )}
     </>
