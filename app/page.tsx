@@ -42,7 +42,6 @@ export default function LettersHome() {
               <p className="kicker">The letters</p>
               <h2 id="letters-title">From Honiara, with love.</h2>
             </div>
-            <p>Each new letter will have its own permanent page here.</p>
           </header>
 
           <div className="letter-list">
