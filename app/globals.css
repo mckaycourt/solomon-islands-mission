@@ -17,6 +17,7 @@
 html { scroll-behavior: smooth; }
 body {
   margin: 0;
+  overflow-x: clip;
   color: var(--ink);
   background:
     radial-gradient(circle at 8% 8%, rgba(238, 191, 75, 0.2), transparent 28rem),
@@ -52,14 +53,14 @@ footer {
   justify-content: space-between;
   gap: 24px;
 }
-.brand { display: inline-flex; align-items: center; gap: 13px; font-weight: 760; letter-spacing: -0.02em; text-decoration: none; }
+.brand { min-height: 44px; display: inline-flex; align-items: center; gap: 13px; font-weight: 760; letter-spacing: -0.02em; text-decoration: none; }
 .brand-mark { width: 38px; height: 38px; border: 1.5px solid var(--ink); border-radius: 50%; display: grid; place-items: center; font: italic 22px Georgia, serif; }
 nav { display: flex; align-items: center; gap: 29px; font-size: 12px; font-weight: 750; letter-spacing: 0.1em; text-transform: uppercase; }
 nav a { text-decoration: none; }
 nav a:not(.nav-button) { position: relative; }
 nav a:not(.nav-button)::after { content: ""; position: absolute; left: 0; right: 100%; bottom: -5px; height: 2px; background: var(--coral); transition: right 180ms ease; }
 nav a:hover::after { right: 0; }
-.nav-button { border: 1.5px solid var(--ink); border-radius: 999px; padding: 8px 17px; transition: background 180ms, color 180ms; }
+.nav-button { min-height: 44px; display: inline-flex; align-items: center; border: 1.5px solid var(--ink); border-radius: 999px; padding: 8px 17px; transition: background 180ms, color 180ms; }
 .nav-button:hover { background: var(--ink); color: var(--paper); }
 
 main { max-width: 1450px; margin: 0 auto 100px; padding: 0 36px; }
