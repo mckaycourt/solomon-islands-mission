@@ -24,7 +24,7 @@ export default function LettersHome() {
             <p className="eyebrow">Solomon Islands Honiara Mission · 2026</p>
             <h1 id="home-title">Letters from the <em>Solomon Islands</em></h1>
             <p className="home-intro">
-              Dispatches from President and Sister Court about the people, places, miracles, and everyday work of their mission.
+              Letters from President and Sister Court about the people, places, miracles, and everyday work of their mission.
             </p>
             <div className="home-actions">
               <Link className="primary-link" href={`/letters/${latestLetter.slug}`}>Read the latest letter <span>→</span></Link>
@@ -50,7 +50,7 @@ export default function LettersHome() {
               <article className="letter-card" key={letter.slug}>
                 <Link className="letter-card-image" href={`/letters/${letter.slug}`} aria-label={`Read ${letter.title}`}>
                   <img src={letter.image} alt={letter.imageAlt} />
-                  <span>Dispatch {letter.dispatch}</span>
+                  <span>Letter {letter.number}</span>
                 </Link>
                 <div className="letter-card-copy">
                   <p className="eyebrow">{letter.date}</p>
@@ -58,7 +58,6 @@ export default function LettersHome() {
                   <p>{letter.excerpt}</p>
                   <div className="letter-card-meta">
                     <span>{letter.author}</span>
-                    <span>{letter.readingTime}</span>
                   </div>
                   <Link className="read-letter-link" href={`/letters/${letter.slug}`}>Read the letter <span>→</span></Link>
                 </div>

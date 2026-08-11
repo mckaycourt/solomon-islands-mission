@@ -158,7 +158,7 @@ export default function MonthOneLetter() {
           </div>
 
           <div className="letter-face">
-            <div className="airmail"><span>Dispatch 01</span></div>
+            <div className="airmail"><span>Letter 01</span></div>
             <p className="eyebrow">June 24 – July 13, 2026</p>
             <h1 id="post-title">Month <em>One</em></h1>
             <p className="deck">

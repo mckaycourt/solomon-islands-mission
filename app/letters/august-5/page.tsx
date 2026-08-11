@@ -131,7 +131,7 @@ export default function AugustFiveLetter() {
           <PhotoGallery photos={heroPhotos} variant="hero" heroClassName="august-hero-photo" />
 
           <div className="letter-face">
-            <div className="airmail"><span>Dispatch 02</span></div>
+            <div className="airmail"><span>Letter 02</span></div>
             <p className="eyebrow">August 5, 2026</p>
             <h1 id="post-title">Evridai, <em>evridai</em></h1>
             <p className="deck">The work here continues at an amazing pace!</p>
@@ -158,7 +158,7 @@ export default function AugustFiveLetter() {
           </div>
         </section>
 
-        <section className="dispatch-section dispatch-gallery-first" id="photographs">
+        <section className="letter-section letter-gallery-first" id="photographs">
           <header>
             <p className="section-number">01</p>
             <h2>Teaching with purpose</h2>
@@ -166,83 +166,83 @@ export default function AugustFiveLetter() {
           <PhotoGallery photos={teachingPhotos} showCaptions={false} />
         </section>
 
-        <section className="dispatch-section">
+        <section className="letter-section">
           <header>
             <p className="section-number">02</p>
             <h2>‘Merica on Guadalcanal</h2>
           </header>
           <PhotoGallery photos={americaBeforeCopyPhotos} showCaptions={false} />
-          <div className="dispatch-copy">
+          <div className="letter-copy">
             <p>It’s been so amazing to be living on Guadalcanal during the 250th anniversary of the signing of the Declaration of Independence and during the anniversary of the US Marines landing on Guadalcanal, August 7th, 1942.</p>
             <p>Around here it’s definitely been ‘Merica. We were invited by the US Embassy to a reception for the 250th and we visited the memorial of the US servicemen that lost their lives during the intense fighting with the Japanese here in the Solomon Islands. Gotta love our men and women in uniform!</p>
           </div>
           <PhotoGallery photos={embassyPhotos} showCaptions={false} />
         </section>
 
-        <section className="dispatch-section dispatch-section-tinted">
+        <section className="letter-section letter-section-tinted">
           <header>
             <p className="section-number">03</p>
             <h2>Four homes, one purpose</h2>
           </header>
           <PhotoGallery photos={fheBeforeCopyPhotos} showCaptions={false} />
-          <div className="dispatch-copy">
+          <div className="letter-copy">
             <p>{fheParagraphOne}</p>
             <p>{fheParagraphTwo}</p>
           </div>
           <PhotoGallery photos={fheAfterCopyPhotos} showCaptions={false} />
         </section>
 
-        <section className="dispatch-section">
+        <section className="letter-section">
           <header><p className="section-number">04</p><h2>Cocoa, coconuts, and Grace</h2></header>
           <PhotoGallery photos={cocoaPhotos} showCaptions={false} />
-          <div className="dispatch-copy">
+          <div className="letter-copy">
             <p>{sourceParagraph(19, 0)}</p>
             <p>{sourceParagraph(19, 1)}</p>
             <p>{sourceParagraph(19, 2)} {sourceParagraph(20, 0)}</p>
           </div>
         </section>
 
-        <section className="dispatch-section dispatch-section-tinted">
+        <section className="letter-section letter-section-tinted">
           <header><p className="section-number">05</p><h2>The gathering on display</h2></header>
-          <div className="dispatch-copy">
+          <div className="letter-copy">
             <p>{sourceParagraph(20, 1)}</p>
           </div>
           <PhotoGallery photos={omaePhotos} showCaptions={false} />
-          <div className="dispatch-copy"><p>{sourceParagraph(20, 2)}</p></div>
+          <div className="letter-copy"><p>{sourceParagraph(20, 2)}</p></div>
           <PhotoGallery photos={elderSamiaPhotos} showCaptions={false} />
-          <div className="dispatch-copy"><p>{sourceParagraph(21, 0)}</p></div>
+          <div className="letter-copy"><p>{sourceParagraph(21, 0)}</p></div>
           <PhotoGallery photos={fanasiaPhotos} showCaptions={false} />
-          <div className="dispatch-copy"><p>{sourceParagraph(22, 0)}</p></div>
+          <div className="letter-copy"><p>{sourceParagraph(22, 0)}</p></div>
         </section>
 
-        <section className="dispatch-section dispatch-continuation">
+        <section className="letter-section letter-continuation">
           <PhotoGallery photos={nahaHousePhotos} showCaptions={false} />
-          <div className="dispatch-copy">
+          <div className="letter-copy">
             <p>{sourceParagraph(23, 0)}</p>
             <p>{sourceParagraph(23, 1)}</p>
             <p>{sourceParagraph(23, 2)}</p>
           </div>
           <PhotoGallery photos={missionariesTogetherPhotos} showCaptions={false} />
-          <div className="dispatch-copy">
+          <div className="letter-copy">
             <p>{sourceParagraph(24, 0)}</p>
             <p>{sourceParagraph(24, 1)}</p>
           </div>
           <PhotoGallery photos={elderWilkersonPhotos} showCaptions={false} />
-          <div className="dispatch-copy">
+          <div className="letter-copy">
             <p>{sourceParagraph(25, 0)}</p>
           </div>
         </section>
 
-        <section className="dispatch-section malaita-section">
+        <section className="letter-section malaita-section">
           <header><p className="section-number">06</p><h2>Malaita: delays with a purpose</h2></header>
-          <div className="dispatch-copy">
+          <div className="letter-copy">
             <p>{sourceParagraph(25, 1)}</p>
             <p>{sourceParagraph(25, 2)}</p>
             <p>{sourceParagraph(25, 3)}</p>
             <p>{sourceParagraph(25, 4)}</p>
           </div>
           <PhotoGallery photos={dieselPhotos} showCaptions={false} />
-          <div className="dispatch-copy">
+          <div className="letter-copy">
             <p>{sourceParagraph(28, 0)}</p>
             <p>{sourceParagraph(28, 1)} {sourceParagraph(29, 0)}</p>
             <p>{sourceParagraph(29, 1)}</p>
@@ -266,7 +266,7 @@ export default function AugustFiveLetter() {
 
         <nav className="letter-navigation" aria-label="Letter navigation">
           <Link href="/letters/month-one"><span>←</span><small>Previous letter</small><strong>Month One</strong></Link>
-          <div><small>Current letter</small><strong>Dispatch 02 · Evridai, Evridai</strong></div>
+          <div><small>Current letter</small><strong>Letter 02 · Evridai, Evridai</strong></div>
         </nav>
 
         <footer className="letter-footer">
