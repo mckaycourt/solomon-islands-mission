@@ -138,7 +138,6 @@ export default function AugustFiveLetter() {
             <div className="meta">
               <span>President &amp; Sister Court</span>
               <span>Honiara</span>
-              <span>9 min read</span>
             </div>
             <p className="hand-note">we are in the hands of God</p>
             <div className="postmark" aria-hidden="true">Honiara<br />Solomon Islands<br />05 · 08 · 26</div>

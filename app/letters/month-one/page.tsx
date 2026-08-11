@@ -167,7 +167,6 @@ export default function MonthOneLetter() {
             <div className="meta">
               <span>President &amp; Sister Court</span>
               <span>Honiara</span>
-              <span>10 min read</span>
             </div>
             <p className="hand-note">we carry you with us every day!</p>
             <div className="postmark" aria-hidden="true">Honiara<br />Solomon Islands<br />13 · 07 · 26</div>
