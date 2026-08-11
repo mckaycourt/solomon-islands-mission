@@ -21,6 +21,10 @@ const teachingPhotos = [
   { src: "/photos/august-5/family-teaching-selfie.jpg", alt: "Missionaries smiling with a family during a teaching visit", caption: "A joyful teaching visit" },
 ] as const;
 
+const heroPhotos = [
+  { src: "/photos/august-5/malaita-baptism.jpg", alt: "Missionaries and members gathered at a beach baptism on Malaita", caption: "Malaita · Solomon Islands" },
+] as const;
+
 const americaBeforeCopyPhotos = [
   { src: "/photos/august-5/guadalcanal-memorial.jpg", alt: "President and Sister Court at the Guadalcanal American Memorial", caption: "Guadalcanal American Memorial" },
   { src: "/photos/august-5/memorial-flags.jpg", alt: "American and Solomon Islands flags flying over the Guadalcanal memorial", caption: "Remembering those who served" },
@@ -124,10 +128,7 @@ export default function AugustFiveLetter() {
 
       <main id="top">
         <article className="postcard august-postcard" aria-labelledby="post-title">
-          <div className="hero-photo august-hero-photo">
-            <img src="/photos/august-5/malaita-baptism.jpg" alt="Missionaries and members gathered at a beach baptism on Malaita" />
-            <p className="photo-caption">Malaita · Solomon Islands</p>
-          </div>
+          <PhotoGallery photos={heroPhotos} variant="hero" heroClassName="august-hero-photo" />
 
           <div className="letter-face">
             <div className="airmail"><span>Dispatch 02</span></div>

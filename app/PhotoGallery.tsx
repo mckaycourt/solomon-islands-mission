@@ -9,7 +9,14 @@ type Photo = {
   className?: string;
 };
 
-export function PhotoGallery({ photos, showCaptions = true }: { photos: readonly Photo[]; showCaptions?: boolean }) {
+type PhotoGalleryProps = {
+  photos: readonly Photo[];
+  showCaptions?: boolean;
+  variant?: "grid" | "hero";
+  heroClassName?: string;
+};
+
+export function PhotoGallery({ photos, showCaptions = true, variant = "grid", heroClassName = "" }: PhotoGalleryProps) {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
   const closeButtonRef = useRef<HTMLButtonElement>(null);
   const previousFocusRef = useRef<HTMLElement | null>(null);
@@ -45,24 +52,39 @@ export function PhotoGallery({ photos, showCaptions = true }: { photos: readonly
   }, [isOpen, photos.length]);
 
   const activePhoto = activeIndex === null ? null : photos[activeIndex];
+  const heroPhoto = photos[0];
 
   return (
     <>
-      <div className="gallery-grid" data-photo-count={photos.length}>
-        {photos.map((photo, index) => (
-          <figure key={photo.src} className={photo.className}>
-            <button
-              className="gallery-photo-button"
-              type="button"
-              onClick={() => setActiveIndex(index)}
-              aria-label={`Open photo: ${photo.caption}`}
-            >
-              <img src={photo.src} alt={photo.alt} />
-            </button>
-            {showCaptions && <figcaption>{photo.caption}</figcaption>}
-          </figure>
-        ))}
-      </div>
+      {variant === "hero" && heroPhoto ? (
+        <div className={`hero-photo ${heroClassName}`.trim()}>
+          <button
+            className="hero-photo-button"
+            type="button"
+            onClick={() => setActiveIndex(0)}
+            aria-label={`Open photo: ${heroPhoto.caption}`}
+          >
+            <img src={heroPhoto.src} alt={heroPhoto.alt} />
+          </button>
+          {showCaptions && <p className="photo-caption">{heroPhoto.caption}</p>}
+        </div>
+      ) : (
+        <div className="gallery-grid" data-photo-count={photos.length}>
+          {photos.map((photo, index) => (
+            <figure key={photo.src} className={photo.className}>
+              <button
+                className="gallery-photo-button"
+                type="button"
+                onClick={() => setActiveIndex(index)}
+                aria-label={`Open photo: ${photo.caption}`}
+              >
+                <img src={photo.src} alt={photo.alt} />
+              </button>
+              {showCaptions && <figcaption>{photo.caption}</figcaption>}
+            </figure>
+          ))}
+        </div>
+      )}
 
       {activePhoto && activeIndex !== null && (
         <div

@@ -102,9 +102,11 @@ main { max-width: 1450px; margin: 0 auto 100px; padding: 0 36px; }
 .postcard { position: relative; min-height: 750px; display: grid; grid-template-columns: 1.03fr 0.97fr; overflow: hidden; background: var(--paper); box-shadow: var(--shadow); transform: rotate(-0.1deg); isolation: isolate; }
 .postcard::before { content: ""; position: absolute; inset: 0; border: 1px solid rgba(80, 73, 55, 0.14); z-index: 5; pointer-events: none; }
 .hero-photo { position: relative; min-width: 0; min-height: 750px; overflow: hidden; background: #71846e; }
+.hero-photo-button { width: 100%; height: 100%; display: block; padding: 0; border: 0; background: transparent; cursor: zoom-in; }
+.hero-photo-button:focus-visible { position: relative; z-index: 3; outline: 3px solid var(--sun); outline-offset: -6px; }
 .hero-photo img { width: 100%; height: 100%; display: block; object-fit: cover; object-position: 48% 50%; filter: saturate(0.92) contrast(1.02); transition: transform 900ms cubic-bezier(.2,.8,.2,1); }
 .postcard:hover .hero-photo img { transform: scale(1.018); }
-.hero-photo::after { content: ""; position: absolute; inset: 0; background: linear-gradient(0deg, rgba(23, 59, 58, 0.48), transparent 43%); }
+.hero-photo::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(0deg, rgba(23, 59, 58, 0.48), transparent 43%); }
 .photo-caption { position: absolute; z-index: 2; left: 30px; right: 30px; bottom: 25px; margin: 0; color: #fffdf5; font: 650 11px/1.45 var(--font-geist-mono), monospace; letter-spacing: 0.05em; text-transform: uppercase; }
 .letter-face { position: relative; padding: 68px 72px 64px 76px; display: flex; flex-direction: column; justify-content: center; background: linear-gradient(102deg, rgba(255,255,255,0.18), transparent 38%), var(--paper); }
 .letter-face::before { content: ""; position: absolute; left: 0; top: 8%; bottom: 8%; border-left: 1px dashed rgba(23, 59, 58, 0.3); }
