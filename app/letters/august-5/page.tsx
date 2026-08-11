@@ -151,7 +151,6 @@ export default function AugustFiveLetter() {
           <aside className="chapter-note">
             <span className="script">August 5, 2026</span>
             <h2>The work continues</h2>
-            <p>Dispatch two from the Solomon Islands Honiara Mission.</p>
           </aside>
           <div className="story">
             <p className="dropcap">The work here continues at an amazing pace! We cannot find words to express how much we love these missionaries and how great it is to be with them, especially when they are teaching! It is inspiring to hear them teach the gospel and share their testimonies!</p>
