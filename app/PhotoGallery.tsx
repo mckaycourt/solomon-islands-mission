@@ -50,7 +50,7 @@ export function PhotoGallery({ photos }: { photos: readonly Photo[] }) {
     <>
       <div className="gallery-grid">
         {photos.map((photo, index) => (
-          <figure key={photo.src}>
+          <figure key={photo.src} className={photo.className}>
             <button
               className="gallery-photo-button"
               type="button"

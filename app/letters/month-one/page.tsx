@@ -338,10 +338,7 @@ export default function MonthOneLetter() {
 
         <nav className="letter-navigation" aria-label="Letter navigation">
           <Link href="/#letters"><span>←</span><small>Back to</small><strong>All letters</strong></Link>
-          <div>
-            <small>Current letter</small>
-            <strong>Dispatch 01 · Month One</strong>
-          </div>
+          <Link href="/letters/august-5"><small>Next letter</small><strong>Evridai, Evridai</strong><span>→</span></Link>
         </nav>
       </main>
 
