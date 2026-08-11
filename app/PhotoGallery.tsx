@@ -9,7 +9,7 @@ type Photo = {
   className?: string;
 };
 
-export function PhotoGallery({ photos }: { photos: readonly Photo[] }) {
+export function PhotoGallery({ photos, showCaptions = true }: { photos: readonly Photo[]; showCaptions?: boolean }) {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
   const closeButtonRef = useRef<HTMLButtonElement>(null);
   const previousFocusRef = useRef<HTMLElement | null>(null);
@@ -59,7 +59,7 @@ export function PhotoGallery({ photos }: { photos: readonly Photo[] }) {
             >
               <img src={photo.src} alt={photo.alt} />
             </button>
-            <figcaption>{photo.caption}</figcaption>
+            {showCaptions && <figcaption>{photo.caption}</figcaption>}
           </figure>
         ))}
       </div>
@@ -77,7 +77,7 @@ export function PhotoGallery({ photos }: { photos: readonly Photo[] }) {
             <figure className="lightbox-figure">
               <img src={activePhoto.src} alt={activePhoto.alt} />
               <figcaption>
-                <span>{activePhoto.caption}</span>
+                {showCaptions && <span>{activePhoto.caption}</span>}
                 <small>{activeIndex + 1} / {photos.length}</small>
               </figcaption>
             </figure>

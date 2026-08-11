@@ -145,7 +145,7 @@ export default function AugustFiveLetter() {
             <p className="section-number">01</p>
             <h2>Teaching with purpose</h2>
           </header>
-          <PhotoGallery photos={teachingPhotos} />
+          <PhotoGallery photos={teachingPhotos} showCaptions={false} />
         </section>
 
         <section className="dispatch-section">
@@ -157,7 +157,7 @@ export default function AugustFiveLetter() {
             <p>It’s been so amazing to be living on Guadalcanal during the 250th anniversary of the signing of the Declaration of Independence and during the anniversary of the US Marines landing on Guadalcanal, August 7th, 1942.</p>
             <p>Around here it’s definitely been ‘Merica. We were invited by the US Embassy to a reception for the 250th and we visited the memorial of the US servicemen that lost their lives during the intense fighting with the Japanese here in the Solomon Islands. Gotta love our men and women in uniform!</p>
           </div>
-          <PhotoGallery photos={americaPhotos} />
+          <PhotoGallery photos={americaPhotos} showCaptions={false} />
         </section>
 
         <section className="dispatch-section dispatch-section-tinted">
@@ -169,7 +169,7 @@ export default function AugustFiveLetter() {
             <p>{fheParagraphOne}</p>
             <p>{fheParagraphTwo}</p>
           </div>
-          <PhotoGallery photos={fhePhotos} />
+          <PhotoGallery photos={fhePhotos} showCaptions={false} />
         </section>
 
         <section className="dispatch-section">
@@ -179,7 +179,7 @@ export default function AugustFiveLetter() {
             <p>{sourceParagraph(19, 1)}</p>
             <p>{sourceParagraph(19, 2)} {sourceParagraph(20, 0)}</p>
           </div>
-          <PhotoGallery photos={cocoaPhotos} />
+          <PhotoGallery photos={cocoaPhotos} showCaptions={false} />
         </section>
 
         <section className="dispatch-section dispatch-section-tinted">
@@ -190,7 +190,7 @@ export default function AugustFiveLetter() {
             <p>{sourceParagraph(21, 0)}</p>
             <p>{sourceParagraph(22, 0)}</p>
           </div>
-          <PhotoGallery photos={familyPhotos} />
+          <PhotoGallery photos={familyPhotos} showCaptions={false} />
         </section>
 
         <section className="dispatch-section dispatch-continuation">
@@ -202,7 +202,7 @@ export default function AugustFiveLetter() {
             <p>{sourceParagraph(24, 1)}</p>
             <p>{sourceParagraph(25, 0)}</p>
           </div>
-          <PhotoGallery photos={missionaryPhotos} />
+          <PhotoGallery photos={missionaryPhotos} showCaptions={false} />
         </section>
 
         <section className="dispatch-section malaita-section">
@@ -217,7 +217,7 @@ export default function AugustFiveLetter() {
             <p>{sourceParagraph(28, 0)}</p>
             <p>{sourceParagraph(28, 1)} {sourceParagraph(29, 0)}</p>
           </div>
-          <PhotoGallery photos={dieselPhotos} />
+          <PhotoGallery photos={dieselPhotos} showCaptions={false} />
           <div className="dispatch-copy dispatch-copy-after-gallery">
             <p>{sourceParagraph(29, 1)}</p>
             <p>{sourceParagraph(29, 2)}</p>
@@ -226,7 +226,7 @@ export default function AugustFiveLetter() {
             <p>{sourceParagraph(29, 5)}</p>
             <p>{sourceParagraph(29, 6)}</p>
           </div>
-          <PhotoGallery photos={malaitaPhotos} />
+          <PhotoGallery photos={malaitaPhotos} showCaptions={false} />
         </section>
 
         <section className="scripture-closing">
