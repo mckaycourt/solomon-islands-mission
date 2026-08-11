@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { createPortal } from "react-dom";
 
 type Photo = {
   src: string;
@@ -86,7 +87,7 @@ export function PhotoGallery({ photos, showCaptions = true, variant = "grid", he
         </div>
       )}
 
-      {activePhoto && activeIndex !== null && (
+      {activePhoto && activeIndex !== null && createPortal(
         <div
           className="lightbox"
           onMouseDown={(event) => {
@@ -105,7 +106,8 @@ export function PhotoGallery({ photos, showCaptions = true, variant = "grid", he
             </figure>
             <button className="lightbox-nav lightbox-next" type="button" onClick={showNext} aria-label="Next photograph">→</button>
           </div>
-        </div>
+        </div>,
+        document.body,
       )}
     </>
   );
