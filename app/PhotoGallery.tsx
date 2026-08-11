@@ -48,7 +48,7 @@ export function PhotoGallery({ photos, showCaptions = true }: { photos: readonly
 
   return (
     <>
-      <div className="gallery-grid">
+      <div className="gallery-grid" data-photo-count={photos.length}>
         {photos.map((photo, index) => (
           <figure key={photo.src} className={photo.className}>
             <button

@@ -21,18 +21,24 @@ const teachingPhotos = [
   { src: "/photos/august-5/family-teaching-selfie.jpg", alt: "Missionaries smiling with a family during a teaching visit", caption: "A joyful teaching visit" },
 ] as const;
 
-const americaPhotos = [
+const americaBeforeCopyPhotos = [
   { src: "/photos/august-5/guadalcanal-memorial.jpg", alt: "President and Sister Court at the Guadalcanal American Memorial", caption: "Guadalcanal American Memorial" },
   { src: "/photos/august-5/memorial-flags.jpg", alt: "American and Solomon Islands flags flying over the Guadalcanal memorial", caption: "Remembering those who served" },
   { src: "/photos/august-5/courts-memorial-selfie.jpg", alt: "President and Sister Court at the memorial wall", caption: "At the memorial wall" },
   { src: "/photos/august-5/independence-cake.jpg", alt: "A cake decorated as an American flag for the 250th anniversary", caption: "Celebrating 250 years" },
+] as const;
+
+const embassyPhotos = [
   { src: "/photos/august-5/embassy-reception.jpg", alt: "President and Sister Court with guests at the US Embassy reception", caption: "The US Embassy reception" },
 ] as const;
 
-const fhePhotos = [
+const fheBeforeCopyPhotos = [
   { src: "/photos/august-5/fhe-living-room.jpg", alt: "Missionaries and senior couples gathered in a living room for Family Home Evening", caption: "Family Home Evening together" },
   { src: "/photos/august-5/fhe-group.jpg", alt: "Missionaries smiling together during Family Home Evening", caption: "Learning from each other" },
   { src: "/photos/august-5/fhe-dinner.jpg", alt: "Missionaries and senior couples gathered around a dinner table", caption: "A good meal and good company" },
+] as const;
+
+const fheAfterCopyPhotos = [
   { src: "/photos/august-5/rainy-senior-missionaries.jpg", alt: "Senior missionaries smiling together on a rainy day", caption: "Our amazing senior missionaries" },
 ] as const;
 
@@ -48,15 +54,27 @@ const cocoaPhotos = [
   { src: "/photos/august-5/grace-cocoa-farmer.jpg", alt: "Grace holding produce from her cocoa farm", caption: "Grace and her family plantation" },
 ] as const;
 
-const familyPhotos = [
+const omaePhotos = [
   { src: "/photos/august-5/omae-family-airport.jpg", alt: "The O’mae family together at the airport", caption: "The O’mae family · On their way to the temple" },
+] as const;
+
+const elderSamiaPhotos = [
   { src: "/photos/august-5/elder-samia-airport.jpg", alt: "Elder Samia with family and missionaries at the airport", caption: "Elder Samia · Back to serve" },
+] as const;
+
+const fanasiaPhotos = [
   { src: "/photos/august-5/fanasia-family.jpg", alt: "The Fanasia family with President and Sister Court", caption: "The Fanasia family · Sealed together" },
 ] as const;
 
-const missionaryPhotos = [
+const nahaHousePhotos = [
   { src: "/photos/august-5/naha-house-missionaries.jpg", alt: "Missionaries and senior couples together above the former Naha house", caption: "Goodbye to the Naha House" },
+] as const;
+
+const missionariesTogetherPhotos = [
   { src: "/photos/august-5/missionaries-together.jpg", alt: "A large group of missionaries gathered outside a meetinghouse", caption: "Ours forever" },
+] as const;
+
+const elderWilkersonPhotos = [
   { src: "/photos/august-5/elder-wilkerson-airport.jpg", alt: "Elder Wilkerson arriving at the Honiara airport", caption: "Welcome, Elder Wilkerson" },
 ] as const;
 
@@ -153,11 +171,12 @@ export default function AugustFiveLetter() {
             <p className="section-number">02</p>
             <h2>‘Merica on Guadalcanal</h2>
           </header>
+          <PhotoGallery photos={americaBeforeCopyPhotos} showCaptions={false} />
           <div className="dispatch-copy">
             <p>It’s been so amazing to be living on Guadalcanal during the 250th anniversary of the signing of the Declaration of Independence and during the anniversary of the US Marines landing on Guadalcanal, August 7th, 1942.</p>
             <p>Around here it’s definitely been ‘Merica. We were invited by the US Embassy to a reception for the 250th and we visited the memorial of the US servicemen that lost their lives during the intense fighting with the Japanese here in the Solomon Islands. Gotta love our men and women in uniform!</p>
           </div>
-          <PhotoGallery photos={americaPhotos} showCaptions={false} />
+          <PhotoGallery photos={embassyPhotos} showCaptions={false} />
         </section>
 
         <section className="dispatch-section dispatch-section-tinted">
@@ -165,44 +184,53 @@ export default function AugustFiveLetter() {
             <p className="section-number">03</p>
             <h2>Four homes, one purpose</h2>
           </header>
+          <PhotoGallery photos={fheBeforeCopyPhotos} showCaptions={false} />
           <div className="dispatch-copy">
             <p>{fheParagraphOne}</p>
             <p>{fheParagraphTwo}</p>
           </div>
-          <PhotoGallery photos={fhePhotos} showCaptions={false} />
+          <PhotoGallery photos={fheAfterCopyPhotos} showCaptions={false} />
         </section>
 
         <section className="dispatch-section">
           <header><p className="section-number">04</p><h2>Cocoa, coconuts, and Grace</h2></header>
+          <PhotoGallery photos={cocoaPhotos} showCaptions={false} />
           <div className="dispatch-copy">
             <p>{sourceParagraph(19, 0)}</p>
             <p>{sourceParagraph(19, 1)}</p>
             <p>{sourceParagraph(19, 2)} {sourceParagraph(20, 0)}</p>
           </div>
-          <PhotoGallery photos={cocoaPhotos} showCaptions={false} />
         </section>
 
         <section className="dispatch-section dispatch-section-tinted">
           <header><p className="section-number">05</p><h2>The gathering on display</h2></header>
           <div className="dispatch-copy">
             <p>{sourceParagraph(20, 1)}</p>
-            <p>{sourceParagraph(20, 2)}</p>
-            <p>{sourceParagraph(21, 0)}</p>
-            <p>{sourceParagraph(22, 0)}</p>
           </div>
-          <PhotoGallery photos={familyPhotos} showCaptions={false} />
+          <PhotoGallery photos={omaePhotos} showCaptions={false} />
+          <div className="dispatch-copy"><p>{sourceParagraph(20, 2)}</p></div>
+          <PhotoGallery photos={elderSamiaPhotos} showCaptions={false} />
+          <div className="dispatch-copy"><p>{sourceParagraph(21, 0)}</p></div>
+          <PhotoGallery photos={fanasiaPhotos} showCaptions={false} />
+          <div className="dispatch-copy"><p>{sourceParagraph(22, 0)}</p></div>
         </section>
 
         <section className="dispatch-section dispatch-continuation">
+          <PhotoGallery photos={nahaHousePhotos} showCaptions={false} />
           <div className="dispatch-copy">
             <p>{sourceParagraph(23, 0)}</p>
             <p>{sourceParagraph(23, 1)}</p>
             <p>{sourceParagraph(23, 2)}</p>
+          </div>
+          <PhotoGallery photos={missionariesTogetherPhotos} showCaptions={false} />
+          <div className="dispatch-copy">
             <p>{sourceParagraph(24, 0)}</p>
             <p>{sourceParagraph(24, 1)}</p>
+          </div>
+          <PhotoGallery photos={elderWilkersonPhotos} showCaptions={false} />
+          <div className="dispatch-copy">
             <p>{sourceParagraph(25, 0)}</p>
           </div>
-          <PhotoGallery photos={missionaryPhotos} showCaptions={false} />
         </section>
 
         <section className="dispatch-section malaita-section">
@@ -213,12 +241,10 @@ export default function AugustFiveLetter() {
             <p>{sourceParagraph(25, 3)}</p>
             <p>{sourceParagraph(25, 4)}</p>
           </div>
+          <PhotoGallery photos={dieselPhotos} showCaptions={false} />
           <div className="dispatch-copy">
             <p>{sourceParagraph(28, 0)}</p>
             <p>{sourceParagraph(28, 1)} {sourceParagraph(29, 0)}</p>
-          </div>
-          <PhotoGallery photos={dieselPhotos} showCaptions={false} />
-          <div className="dispatch-copy dispatch-copy-after-gallery">
             <p>{sourceParagraph(29, 1)}</p>
             <p>{sourceParagraph(29, 2)}</p>
             <p>{sourceParagraph(29, 3)}</p>
