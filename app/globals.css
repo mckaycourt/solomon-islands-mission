@@ -176,7 +176,7 @@ blockquote { margin: 50px -55px 62px 64px; padding: 36px 42px; background: var(-
 .gallery-grid figure.tall { min-width: 0; margin: 0; }
 .gallery-photo-button { width: 100%; display: block; padding: 0; border: 0; background: transparent; color: inherit; cursor: zoom-in; }
 .gallery-photo-button:focus-visible { outline: 3px solid var(--coral); outline-offset: 4px; }
-.gallery-grid img { width: 100%; aspect-ratio: 4 / 3; display: block; object-fit: cover; background: #b8c2ad; box-shadow: 0 10px 26px rgba(23, 59, 58, 0.12); transition: transform 350ms ease, box-shadow 350ms ease; }
+.gallery-grid img { width: 100%; aspect-ratio: 4 / 3; display: block; object-fit: contain; background: rgba(23, 59, 58, 0.045); box-shadow: 0 10px 26px rgba(23, 59, 58, 0.12); transition: transform 350ms ease, box-shadow 350ms ease; }
 .gallery-grid figure:hover img { transform: translateY(-3px); box-shadow: 0 16px 34px rgba(23, 59, 58, 0.17); }
 .gallery-grid figcaption { padding: 11px 3px 0; color: var(--ink-soft); font-size: 10px; font-weight: 750; line-height: 1.45; letter-spacing: 0.06em; text-transform: uppercase; }
 .lightbox { position: fixed; inset: 0; z-index: 1000; display: grid; place-items: center; padding: 28px; background: rgba(23, 59, 58, 0.16); }
