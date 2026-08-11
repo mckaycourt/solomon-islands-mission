@@ -13,6 +13,7 @@ export default function LettersHome() {
         </Link>
         <nav aria-label="Primary navigation">
           <a href="#letters">Letters</a>
+          <Link className="photographs-link" href="/photographs">Photographs</Link>
           <Link className="nav-button" href={`/letters/${latestLetter.slug}`}>Latest letter</Link>
         </nav>
       </header>
