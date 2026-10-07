@@ -364,10 +364,10 @@ footer > a:last-child { font-weight: 700; }
 .thought-copy .thought-question { padding-left: 20px; border-left: 3px solid var(--coral); font-weight: bold; }
 .thought-chapters { margin-top: 24px; display: flex; flex-wrap: wrap; gap: 12px; letter-spacing: normal; text-transform: none; }
 .thought-chapters > span { margin-right: 4px; color: var(--ink-soft); font-size: 12px; }
-.thought-chapters a { min-height: 44px; padding: 9px 16px; border: 1px solid var(--line); border-radius: 999px; background: var(--paper); font-size: 13px; }
-.thought-chapters a:hover { border-color: var(--ink); }
-.thought-copy .scripture-source-link { min-height: 44px; margin-top: 8px; display: flex; width: fit-content; margin-left: auto; align-items: center; gap: 6px; color: var(--ink-soft); font: 500 12px/1.5 var(--font-geist-sans), Arial, sans-serif; text-decoration: none; }
-.thought-copy .scripture-source-link:hover { color: var(--ink); text-decoration: underline; text-underline-offset: 4px; }
+.thought-chapters a { min-height: 44px; padding: 9px 4px; font-size: 13px; text-decoration: underline; text-underline-offset: 4px; }
+.thought-chapters a:hover { color: var(--coral); }
+.thought-copy .scripture-source-link { min-height: 44px; margin-top: 8px; display: flex; width: fit-content; margin-left: auto; align-items: center; color: var(--ink-soft); font: 500 12px/1.5 var(--font-geist-sans), Arial, sans-serif; text-decoration: underline; text-underline-offset: 4px; }
+.thought-copy .scripture-source-link:hover { color: var(--ink); }
 .scripture-source-link:focus-visible, .thought-chapters a:focus-visible { outline: 2px solid var(--coral); outline-offset: 4px; }
 
 @media (max-width: 850px) {

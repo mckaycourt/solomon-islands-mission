@@ -28,7 +28,7 @@ export default async function ScriptureThoughtPage({ params }: { params: Promise
           <nav className="thought-chapters" aria-label="Today's scripture reading">
             <span>Today’s reading</span>
             {thought.chapters.map((chapter) => (
-              <a key={chapter.url} href={chapter.url}>{chapter.label} <span aria-hidden="true">↗</span></a>
+              <a key={chapter.url} href={chapter.url}>{chapter.label}</a>
             ))}
           </nav>
         </header>
@@ -37,7 +37,7 @@ export default async function ScriptureThoughtPage({ params }: { params: Promise
             <blockquote key={index}>
               {block.paragraphs.map((paragraph, verseIndex) => <p key={verseIndex}>{paragraph}</p>)}
               <a className="scripture-source-link" href={block.url} aria-label={`Read ${block.reference} in Gospel Library`}>
-                {block.reference} <span aria-hidden="true">↗</span>
+                {block.reference}
               </a>
             </blockquote>
           ) : (
