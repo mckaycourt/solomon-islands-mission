@@ -258,7 +258,8 @@ footer > a:last-child { font-weight: 700; }
 
 @media (max-width: 850px) {
   .site-header, footer { padding-left: 20px; padding-right: 20px; }
-  nav a:not(.nav-button):not(.photographs-link) { display: none; }
+  .site-header { flex-wrap: wrap; padding-top: 18px; padding-bottom: 18px; gap: 16px; }
+  .site-header nav { width: 100%; flex-wrap: wrap; gap: 16px 22px; }
   main { padding: 0 14px; }
   .home-hero { grid-template-columns: 1fr; }
   .home-hero-copy { padding: 65px 34px; }
@@ -341,4 +342,36 @@ footer > a:last-child { font-weight: 700; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+}
+
+.home-thoughts { margin: 0 7% 70px; padding-top: 60px; border-top: 1px solid var(--line); display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
+.home-thoughts h2 { margin: 0 0 28px; font: 400 clamp(38px, 4vw, 58px)/1.08 Georgia, serif; letter-spacing: -0.04em; }
+.thoughts-page { max-width: 1100px; padding-top: 80px; }
+.thoughts-heading { margin-bottom: 54px; }
+.thoughts-heading h1 { max-width: 850px; font-size: clamp(48px, 7vw, 82px); line-height: 1.05; }
+.thoughts-heading .text-link { display: inline-block; margin-bottom: 36px; }
+.thoughts-heading .deck { margin-bottom: 0; }
+.thought-list { display: grid; gap: 24px; }
+.thought-card { padding: 38px 42px; background: var(--paper-light); border-top: 3px solid var(--coral); }
+.thought-card h2, .thought-card h3 { margin: 0 0 28px; font: 400 clamp(34px, 4vw, 48px)/1.1 Georgia, serif; letter-spacing: -0.04em; }
+.thought-card h2 a, .thought-card h3 a { text-decoration: none; }
+.thought-reading { max-width: 780px; margin: 0 auto; padding: 56px 60px; background: var(--paper-light); }
+.thought-copy { margin-bottom: 48px; color: #294743; font: 19px/1.85 Georgia, serif; }
+.thought-copy > p { margin: 0 0 26px; }
+.thought-copy blockquote { margin: 34px 0; padding: 24px 28px; border-left: 3px solid var(--leaf-deep); background: var(--paper); color: var(--ink); box-shadow: none; transform: none; font: 18px/1.8 Georgia, serif; }
+.thought-copy blockquote p { margin: 0; }
+.thought-copy .thought-question { padding-left: 20px; border-left: 3px solid var(--coral); font-weight: bold; }
+.thought-chapters { margin-top: 24px; display: flex; flex-wrap: wrap; gap: 12px; letter-spacing: normal; text-transform: none; }
+.thought-chapters > span { margin-right: 4px; color: var(--ink-soft); font-size: 12px; }
+.thought-chapters a { min-height: 44px; padding: 9px 16px; border: 1px solid var(--line); border-radius: 999px; background: var(--paper); font-size: 13px; }
+.thought-chapters a:hover { border-color: var(--ink); }
+.thought-copy .scripture-source-link { min-height: 44px; margin-top: 12px; display: inline-flex; align-items: center; gap: 8px; color: var(--ink-soft); font: 700 12px/1.5 var(--font-geist-sans), Arial, sans-serif; text-decoration: underline; text-underline-offset: 4px; }
+.thought-copy .scripture-source-link:hover { color: var(--ink); }
+.scripture-source-link:focus-visible, .thought-chapters a:focus-visible { outline: 2px solid var(--coral); outline-offset: 4px; }
+
+@media (max-width: 850px) {
+  .home-thoughts { margin: 0 12px 60px; grid-template-columns: 1fr; gap: 30px; }
+  .thoughts-page { padding-top: 48px; }
+  .thought-reading { padding: 36px 24px; }
+  .thought-card { padding: 30px 26px; }
 }

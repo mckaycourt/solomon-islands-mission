@@ -17,6 +17,7 @@ export default function PhotographsPage() {
           <span>Letters from the Solomon Islands</span>
         </Link>
         <nav aria-label="Primary navigation">
+          <Link href="/scripture-thoughts">Daily Scripture Thoughts</Link>
           <Link href="/#letters">All letters</Link>
           <Link className="nav-button" href="/letters/august-5">Latest letter</Link>
         </nav>

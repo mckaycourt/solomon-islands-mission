@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { letters } from "./letters";
+import { scriptureThoughts } from "./scripture-thoughts/thoughts";
 
 export default function LettersHome() {
   const latestLetter = letters[0];
@@ -12,6 +13,7 @@ export default function LettersHome() {
           <span>Letters from the Solomon Islands</span>
         </Link>
         <nav aria-label="Primary navigation">
+          <Link href="/scripture-thoughts">Daily Scripture Thoughts</Link>
           <a href="#letters">Letters</a>
           <Link className="photographs-link" href="/photographs">Photographs</Link>
           <Link className="nav-button" href={`/letters/${latestLetter.slug}`}>Latest letter</Link>
@@ -64,6 +66,18 @@ export default function LettersHome() {
               </article>
             ))}
           </div>
+        </section>
+        <section className="home-thoughts" aria-labelledby="thoughts-title">
+          <div>
+            <p className="kicker">Daily Scripture Thoughts</p>
+            <h2 id="thoughts-title">A moment in the scriptures.</h2>
+            <Link className="text-link" href="/scripture-thoughts">Browse daily scripture thoughts →</Link>
+          </div>
+          <article className="thought-card">
+            <p className="eyebrow">{scriptureThoughts[0].day}</p>
+            <h3><Link href={`/scripture-thoughts/${scriptureThoughts[0].slug}`}>{scriptureThoughts[0].title}</Link></h3>
+            <Link className="read-letter-link" href={`/scripture-thoughts/${scriptureThoughts[0].slug}`}>Read the thought <span>→</span></Link>
+          </article>
         </section>
       </main>
 

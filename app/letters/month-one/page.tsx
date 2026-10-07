@@ -139,6 +139,7 @@ export default function MonthOneLetter() {
           <span>Letters from the Solomon Islands</span>
         </Link>
         <nav aria-label="Primary navigation">
+          <Link href="/scripture-thoughts">Daily Scripture Thoughts</Link>
           <Link href="/#letters">All letters</Link>
           <Link className="photographs-link" href="/photographs">Photographs</Link>
           <a className="nav-button" href="mailto:?subject=Letters%20from%20the%20Solomon%20Islands%20%E2%80%94%20Month%20One">
