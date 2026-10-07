@@ -35,9 +35,9 @@ export default async function ScriptureThoughtPage({ params }: { params: Promise
         <div className="thought-copy">
           {thought.blocks.map((block, index) => block.kind === "scripture" ? (
             <blockquote key={index}>
-              <p>{block.text}</p>
+              {block.paragraphs.map((paragraph, verseIndex) => <p key={verseIndex}>{paragraph}</p>)}
               <a className="scripture-source-link" href={block.url} aria-label={`Read ${block.reference} in Gospel Library`}>
-                Read in Gospel Library <span aria-hidden="true">↗</span>
+                {block.reference} <span aria-hidden="true">↗</span>
               </a>
             </blockquote>
           ) : (
