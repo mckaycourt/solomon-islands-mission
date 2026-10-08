@@ -358,9 +358,11 @@ footer > a:last-child { font-weight: 700; }
 .thought-card h2 a, .thought-card h3 a { text-decoration: none; }
 .thought-reading { max-width: 780px; margin: 0 auto; padding: 56px 60px; background: var(--paper-light); }
 .thought-copy { margin-bottom: 48px; color: #294743; font: 19px/1.85 Georgia, serif; }
-.thought-copy > p { margin: 0 0 26px; }
+.thought-copy > p { margin: 0 0 26px; white-space: pre-line; }
+.thought-copy > h2 { margin: 36px 0 18px; font: 400 28px/1.25 Georgia, serif; letter-spacing: -0.02em; }
+.thought-copy > h2:first-child { margin-top: 0; }
 .thought-copy blockquote { margin: 34px 0; padding: 24px 28px; border-left: 3px solid var(--leaf-deep); background: var(--paper); color: var(--ink); box-shadow: none; transform: none; font: 18px/1.8 Georgia, serif; }
-.thought-copy blockquote p { margin: 0; }
+.thought-copy blockquote p { margin: 0; white-space: pre-line; }
 .thought-copy blockquote p + p { margin-top: 18px; }
 .thought-copy .thought-question { padding-left: 20px; border-left: 3px solid var(--coral); font-weight: bold; }
 .thought-reading-meta { display: flex; align-items: center; justify-content: space-between; gap: 12px; }

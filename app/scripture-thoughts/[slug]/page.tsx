@@ -42,6 +42,8 @@ export default async function ScriptureThoughtPage({ params }: { params: Promise
                 {block.reference}
               </a>
             </blockquote>
+          ) : block.kind === "heading" ? (
+            <h2 key={index}>{block.text}</h2>
           ) : (
             <p key={index} className={block.kind === "question" ? "thought-question" : undefined}>{block.text}</p>
           ))}
