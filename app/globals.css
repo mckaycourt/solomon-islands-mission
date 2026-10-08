@@ -361,6 +361,8 @@ footer > a:last-child { font-weight: 700; }
 .thought-copy > p { margin: 0 0 26px; white-space: pre-line; }
 .thought-copy > h2 { margin: 36px 0 18px; font: 400 28px/1.25 Georgia, serif; letter-spacing: -0.02em; }
 .thought-copy > h2:first-child { margin-top: 0; }
+.thought-diagram { display: block; margin: 28px 0; }
+.thought-diagram img { display: block; width: 100%; height: auto; }
 .thought-copy blockquote { margin: 34px 0; padding: 24px 28px; border-left: 3px solid var(--leaf-deep); background: var(--paper); color: var(--ink); box-shadow: none; transform: none; font: 18px/1.8 Georgia, serif; }
 .thought-copy blockquote p { margin: 0; white-space: pre-line; }
 .thought-copy blockquote p + p { margin-top: 18px; }

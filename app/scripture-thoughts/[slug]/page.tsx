@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { scriptureThoughts } from "../thoughts";
 
@@ -42,6 +43,10 @@ export default async function ScriptureThoughtPage({ params }: { params: Promise
                 {block.reference}
               </a>
             </blockquote>
+          ) : block.kind === "image" ? (
+            <a key={index} className="thought-diagram" href={block.src} aria-label="Open the vineyard diagram at full size">
+              <Image src={block.src} alt={block.alt} width={block.width} height={block.height} unoptimized />
+            </a>
           ) : block.kind === "heading" ? (
             <h2 key={index}>{block.text}</h2>
           ) : (
