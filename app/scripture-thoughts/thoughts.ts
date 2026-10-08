@@ -66,4 +66,21 @@ export const scriptureThoughts: ScriptureThought[] = [
       { kind: "paragraph", text: "We love you all!" },
     ],
   },
+  {
+    slug: "alma-1-and-2",
+    title: "Alma 1 & 2",
+    day: "Day 43/100",
+    chapters: [
+      { label: "Alma 1", url: "https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/1?lang=eng" },
+      { label: "Alma 2", url: "https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/2?lang=eng" },
+    ],
+    blocks: [
+      { kind: "paragraph", text: "Elders and Sisters, as we preach the gospel, Alma 1 offers vital warnings for our missions. The story of Nehor shows us a couple of themes for sure that directly apply to today’s world - the danger of priestcraft and the erosion of personal accountability." },
+      { kind: "paragraph", text: "First, we witness Nehor championing priestcraft, teaching that leaders should be popular and that it can be carried out by force. In Alma 1:3, he declares that priests “ought not to labor with their hands, but that they ought to be supported by the people.” In contrast, we see the righteous Gideon, who stood as an example of honest labor and selfless service. In today's world full of people that commercialize faith and seek wealth over truth, we urge you to emulate Gideon's integrity rather than Nehor's pride." },
+      { kind: "paragraph", text: "Second, Nehor flattered the people by eliminating the need for repentance, teaching in Alma 1:4 that “all mankind should be saved at the last day... for the Lord had created all men, and had also redeemed all men.” This mirrors the modern incorrect belief that we will all be saved where accountability is dismissed. When Gideon withstood Nehor with the words of God, Nehor slew him with the sword. Nehor’s eventual execution proves that deceptive philosophies cannot escape divine justice." },
+      { kind: "paragraph", text: "In Alma 2, we watch this deceptive priestcraft taken to an even more dangerous level through Amlici. Nehor sought wealth and praise, but Amlici uses those same flattering doctrines to seek total political tyranny, attempting to rob the people of religious liberty. When the democratic voice of the people rejects him, Amlici’s pride ignites a violent, bloody civil war." },
+      { kind: "paragraph", text: "We learn a sobering lesson for our time that unchecked priestcraft doesn't just corrupt individual souls, it can destroy communities, divide nations, and actively fight against the kingdom of God." },
+      { kind: "paragraph", text: "Sister Court and I pray you will use these comparisons to help others recognize modern traps. True joy requires the personal accountability Gideon defended, not the flattering deceits of Nehor and Amlici." },
+    ],
+  },
 ];
