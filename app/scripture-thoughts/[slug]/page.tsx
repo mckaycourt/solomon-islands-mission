@@ -24,13 +24,15 @@ export default async function ScriptureThoughtPage({ params }: { params: Promise
         <header className="thoughts-heading">
           <Link className="text-link" href="/scripture-thoughts">← Daily Scripture Thoughts</Link>
           <h1>{thought.title}</h1>
-          <p className="eyebrow">{thought.day}</p>
-          <nav className="thought-chapters" aria-label="Today's scripture reading">
-            <span>Today’s reading</span>
-            {thought.chapters.map((chapter) => (
-              <a key={chapter.url} href={chapter.url}>{chapter.label}</a>
-            ))}
-          </nav>
+          <div className="thought-reading-meta">
+            <nav className="thought-chapters" aria-label="Today's scripture reading">
+              <span>Today’s reading</span>
+              {thought.chapters.map((chapter) => (
+                <a key={chapter.url} href={chapter.url}>{chapter.label}</a>
+              ))}
+            </nav>
+            <p className="eyebrow">{thought.day}</p>
+          </div>
         </header>
         <div className="thought-copy">
           {thought.blocks.map((block, index) => block.kind === "scripture" ? (
