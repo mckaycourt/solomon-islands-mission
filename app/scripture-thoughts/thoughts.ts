@@ -12,6 +12,19 @@ export type ScriptureThought = {
 
 export const scriptureThoughts: ScriptureThought[] = [
   {
+    slug: "alma-5",
+    title: "Alma 5",
+    day: "Day 45/100",
+    chapters: [
+      { label: "Alma 5", url: "https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/5?lang=eng" },
+    ],
+    blocks: [
+      { kind: "paragraph", text: "Elders and Sisters, we think Alma 5 should stand on its' own." },
+      { kind: "paragraph", text: "Please read it and imagine you were there. Imagine you're attending a General Conference and Alma is speaking. As you read his words, imagine that he's asking you each question. Look inside." },
+      { kind: "paragraph", text: "This is an amazing sermon!" },
+    ],
+  },
+  {
     slug: "alma-3-and-4",
     title: "Alma 3 & 4",
     day: "Day 44/100",
