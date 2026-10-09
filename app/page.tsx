@@ -1,3 +1,4 @@
+import { SiteFooter } from "./SiteFooter";
 import { SiteMenu } from "./SiteMenu";
 import Link from "next/link";
 import { letters } from "./letters";
@@ -25,8 +26,8 @@ export default function LettersHome() {
               Letters from President and Sister Court about the people, places, miracles, and everyday work of their mission.
             </p>
             <div className="home-actions">
-              <Link className="primary-link" href={`/letters/${latestLetter.slug}`}>Read the latest letter <span>→</span></Link>
-              <a className="text-link" href="#letters">Browse all letters ↓</a>
+              <Link className="primary-link" href={`/letters/${latestLetter.slug}`}>Latest letter <span aria-hidden="true">→</span></Link>
+              <Link className="primary-link secondary-link" href={`/scripture-thoughts/${scriptureThoughts[0].slug}`}>Latest scripture thought <span aria-hidden="true">→</span></Link>
             </div>
           </div>
           <figure className="home-hero-photo">
@@ -77,11 +78,7 @@ export default function LettersHome() {
         </section>
       </main>
 
-      <footer>
-        <Link className="brand" href="/"><span className="brand-mark">S</span><span>Letters from the Solomon Islands</span></Link>
-        <p>Solomon Islands Honiara Mission · 2026</p>
-        <a href="#top">Back to top ↑</a>
-      </footer>
+      <SiteFooter />
     </>
   );
 }

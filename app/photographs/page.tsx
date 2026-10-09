@@ -1,3 +1,4 @@
+import { SiteFooter } from "../SiteFooter";
 import { SiteMenu } from "../SiteMenu";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -43,11 +44,7 @@ export default function PhotographsPage() {
         </section>
       </main>
 
-      <footer>
-        <Link className="brand" href="/"><span className="brand-mark">S</span><span>Letters from the Solomon Islands</span></Link>
-        <p>Solomon Islands Honiara Mission · 2026</p>
-        <a href="#top">Back to top ↑</a>
-      </footer>
+      <SiteFooter />
     </>
   );
 }

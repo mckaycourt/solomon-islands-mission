@@ -79,7 +79,7 @@ export default function NotificationSettings() {
   }
   return (
     <section className="notification-card" aria-labelledby="notification-settings-title">
-      <h2 id="notification-settings-title">A little note when there’s something new.</h2>
+      <h2 id="notification-settings-title">Choose your updates</h2>
       <p>Get a notification when a new letter or daily scripture thought is published. Tap it to open that post.</p>
       {state === "loading" && <p role="status">Loading notification settings…</p>}
       {state === "install" && <div className="notification-instructions"><h3>First, add this site to your iPhone Home Screen.</h3><ol><li>Open this page in Safari.</li><li>Tap Share, then <strong>Add to Home Screen</strong>. Keep <strong>Open as Web App</strong> on if shown.</li><li>Open the new <strong>Court Mission</strong> icon and return to <strong>Notifications</strong>.</li><li>Choose your updates and tap <strong>Enable notifications</strong>, then <strong>Allow</strong>.</li></ol><p>Requires iOS 16.4 or later.</p></div>}

@@ -1,3 +1,4 @@
+import { SiteFooter } from "../SiteFooter";
 import { SiteMenu } from "../SiteMenu";
 import Link from "next/link";
 
@@ -12,11 +13,7 @@ export default function ScriptureThoughtsLayout({ children }: { children: React.
         <SiteMenu />
       </header>
       {children}
-      <footer>
-        <Link className="brand" href="/"><span className="brand-mark">S</span><span>Letters from the Solomon Islands</span></Link>
-        <p>Solomon Islands Honiara Mission · 2026</p>
-        <a href="#top">Back to top ↑</a>
-      </footer>
+      <SiteFooter />
     </>
   );
 }

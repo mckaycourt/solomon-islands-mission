@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import ThoughtArchive from "./ThoughtArchive";
 import { scriptureThoughts } from "./thoughts";
 
 export const metadata: Metadata = {
@@ -15,15 +15,16 @@ export default function ScriptureThoughtsPage() {
         <h1>Daily Scripture <em>Thoughts</em></h1>
         <p className="deck">Scripture study, reflections, and questions to carry into each day.</p>
       </header>
-      <div className="thought-list">
-        {scriptureThoughts.map((thought) => (
-          <article className="thought-card" key={thought.slug}>
-            <p className="eyebrow">{thought.day}</p>
-            <h2><Link href={`/scripture-thoughts/${thought.slug}`}>{thought.title}</Link></h2>
-            <Link className="read-letter-link" href={`/scripture-thoughts/${thought.slug}`}>Read the thought <span>→</span></Link>
-          </article>
-        ))}
-      </div>
+      <ThoughtArchive thoughts={scriptureThoughts.map((thought) => {
+        const paragraphs = thought.blocks.flatMap((block) => block.kind === "paragraph" ? [block.text] : []);
+        const excerpt = paragraphs.find((text) => text.length > 100) ?? paragraphs[0] ?? "";
+        return {
+          slug: thought.slug,
+          title: thought.title,
+          day: thought.day,
+          excerpt: excerpt.length > 220 ? `${excerpt.slice(0, excerpt.lastIndexOf(" ", 220))}…` : excerpt,
+        };
+      })} />
     </main>
   );
 }
