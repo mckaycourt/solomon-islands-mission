@@ -1,0 +1,26 @@
+name: Send new post notifications
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+  schedule:
+    - cron: '23 * * * *'
+permissions:
+  contents: read
+concurrency:
+  group: production-notifications
+  cancel-in-progress: false
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Wait for production and deliver new posts
+        env:
+          NOTIFICATIONS_PUBLISH_SECRET: ${{ secrets.NOTIFICATIONS_PUBLISH_SECRET }}
+          EXPECTED_SHA: ${{ github.sha }}
+        run: node scripts/publish-notifications.mjs

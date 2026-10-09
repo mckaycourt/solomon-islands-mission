@@ -13,6 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+    appleWebApp: { capable: true, title: "Court Mission", statusBarStyle: "default" },
+    icons: { apple: "/icons/apple-touch-icon.png" },
     metadataBase: new URL("https://solomonislandsmission.mckaycourt.com"),
     title: "Letters from the Solomon Islands",
     description: "Letters from President and Sister Court in the Solomon Islands Honiara Mission.",

@@ -9,6 +9,7 @@ export default function ScriptureThoughtsLayout({ children }: { children: React.
           <span>Letters from the Solomon Islands</span>
         </Link>
         <nav aria-label="Primary navigation">
+          <Link href="/notifications">Notifications</Link>
           <Link href="/#letters">Letters</Link>
           <Link href="/scripture-thoughts">Daily Scripture Thoughts</Link>
           <Link href="/photographs">Photographs</Link>

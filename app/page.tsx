@@ -13,6 +13,7 @@ export default function LettersHome() {
           <span>Letters from the Solomon Islands</span>
         </Link>
         <nav aria-label="Primary navigation">
+          <Link href="/notifications">Notifications</Link>
           <Link href="/scripture-thoughts">Daily Scripture Thoughts</Link>
           <a href="#letters">Letters</a>
           <Link className="photographs-link" href="/photographs">Photographs</Link>
