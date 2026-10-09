@@ -13,6 +13,23 @@ export type ScriptureThought = {
 
 export const scriptureThoughts: ScriptureThought[] = [
   {
+    slug: "alma-6-and-7",
+    title: "Alma 6 & 7",
+    day: "Day 46/100",
+    chapters: [
+      { label: "Alma 6", url: "https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/6?lang=eng" },
+      { label: "Alma 7", url: "https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/7?lang=eng" },
+    ],
+    blocks: [
+      { kind: "paragraph", text: "When Elder Gong was here, he leaned forward and told Sister Court and I that we were in the planning and establishment phase of the Church in the Solomon Islands." },
+      { kind: "paragraph", text: "Planning and establishment." },
+      { kind: "question", text: "What can we learn about how the Church plans for and establishes a church from Alma 6 & 7?" },
+      { kind: "paragraph", text: "Since the Lord sent Elder Gong to us and the Church here in Solomon Islands, we should learn from him and we should try to understand all that he taught us about the gospel and how to plan and establish the Church!" },
+      { kind: "paragraph", text: "Please study Alma 6 and 7 thinking about this and also listening to the Spirit for what you might need for yourself, your companionship, or the members and friends in your area today! Alma 7 contains some of the sweetest doctrine about the Atonement of Jesus Christ and it's taught to the people of Gideon because they are ready! Let's be ready too so that the Lord can teach us of His ways and lift our mission up to new heights!" },
+      { kind: "paragraph", text: "We love you all so much and we can’t wait to see you all soon!" },
+    ],
+  },
+  {
     slug: "alma-5",
     title: "Alma 5",
     day: "Day 45/100",
