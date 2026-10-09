@@ -6,14 +6,14 @@ import { notificationContent } from "./notification-content";
 export const SUBSCRIPTIONS = "push:subscriptions";
 export type Subscriber = { subscription: webpush.PushSubscription; letters: boolean; thoughts: boolean };
 export function redis() {
-  const url = process.env.UPSTASH_REDIS_REST_URL ?? process.env.KV_REST_API_URL;
-  const token = process.env.UPSTASH_REDIS_REST_TOKEN ?? process.env.KV_REST_API_TOKEN;
+  const url = process.env.mission_KV_REST_API_URL ?? process.env.UPSTASH_REDIS_REST_URL ?? process.env.KV_REST_API_URL;
+  const token = process.env.mission_KV_REST_API_TOKEN ?? process.env.UPSTASH_REDIS_REST_TOKEN ?? process.env.KV_REST_API_TOKEN;
   if (!url || !token) throw new Error("Notification storage is not configured");
   return new Redis({ url, token });
 }
 export function configured() {
-  return Boolean((process.env.UPSTASH_REDIS_REST_URL ?? process.env.KV_REST_API_URL) &&
-    (process.env.UPSTASH_REDIS_REST_TOKEN ?? process.env.KV_REST_API_TOKEN) &&
+  return Boolean((process.env.mission_KV_REST_API_URL ?? process.env.UPSTASH_REDIS_REST_URL ?? process.env.KV_REST_API_URL) &&
+    (process.env.mission_KV_REST_API_TOKEN ?? process.env.UPSTASH_REDIS_REST_TOKEN ?? process.env.KV_REST_API_TOKEN) &&
     process.env.VAPID_PUBLIC_KEY && process.env.VAPID_PRIVATE_KEY);
 }
 export function subscriberId(endpoint: string) { return createHash("sha256").update(endpoint).digest("hex"); }
