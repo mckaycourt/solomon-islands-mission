@@ -4,19 +4,15 @@
 .site-menu { position: relative; flex-shrink: 0; z-index: 30; }
 .site-menu-toggle {
   min-height: 44px;
+  width: 44px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 9px;
-  padding: 8px 16px;
+  padding: 0;
   border: 1.5px solid var(--ink);
   border-radius: 999px;
   cursor: pointer;
   list-style: none;
-  font-size: 12px;
-  font-weight: 750;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
 }
 .site-menu-toggle::-webkit-details-marker { display: none; }
 .site-menu-toggle:hover, .site-menu[open] .site-menu-toggle { background: var(--ink); color: var(--paper-light); }
@@ -42,5 +38,4 @@
 .site-menu-links a::after { display: none; }
 @media (max-width: 400px) {
   .site-header:has(.site-menu) .brand > span:last-child { max-width: 155px; font-size: 14px; line-height: 1.3; }
-  .site-menu-toggle { padding: 8px 12px; }
 }
