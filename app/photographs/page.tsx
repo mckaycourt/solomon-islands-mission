@@ -1,3 +1,4 @@
+import { SiteMenu } from "../SiteMenu";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { PhotoGallery } from "../PhotoGallery";
@@ -16,11 +17,7 @@ export default function PhotographsPage() {
           <span className="brand-mark">S</span>
           <span>Letters from the Solomon Islands</span>
         </Link>
-        <nav aria-label="Primary navigation">
-          <Link href="/scripture-thoughts">Daily Scripture Thoughts</Link>
-          <Link href="/#letters">All letters</Link>
-          <Link className="nav-button" href="/letters/august-5">Latest letter</Link>
-        </nav>
+        <SiteMenu />
       </header>
 
       <main className="photographs-page" id="top">

@@ -1,3 +1,4 @@
+import { SiteMenu } from "../SiteMenu";
 import Link from "next/link";
 
 export default function ScriptureThoughtsLayout({ children }: { children: React.ReactNode }) {
@@ -8,12 +9,7 @@ export default function ScriptureThoughtsLayout({ children }: { children: React.
           <span className="brand-mark">S</span>
           <span>Letters from the Solomon Islands</span>
         </Link>
-        <nav aria-label="Primary navigation">
-          <Link href="/notifications">Notifications</Link>
-          <Link href="/#letters">Letters</Link>
-          <Link href="/scripture-thoughts">Daily Scripture Thoughts</Link>
-          <Link href="/photographs">Photographs</Link>
-        </nav>
+        <SiteMenu />
       </header>
       {children}
       <footer>

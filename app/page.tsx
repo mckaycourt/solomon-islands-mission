@@ -1,3 +1,4 @@
+import { SiteMenu } from "./SiteMenu";
 import Link from "next/link";
 import { letters } from "./letters";
 import { scriptureThoughts } from "./scripture-thoughts/thoughts";
@@ -12,13 +13,7 @@ export default function LettersHome() {
           <span className="brand-mark">S</span>
           <span>Letters from the Solomon Islands</span>
         </Link>
-        <nav aria-label="Primary navigation">
-          <Link href="/notifications">Notifications</Link>
-          <Link href="/scripture-thoughts">Daily Scripture Thoughts</Link>
-          <a href="#letters">Letters</a>
-          <Link className="photographs-link" href="/photographs">Photographs</Link>
-          <Link className="nav-button" href={`/letters/${latestLetter.slug}`}>Latest letter</Link>
-        </nav>
+        <SiteMenu />
       </header>
 
       <main className="publication-home" id="top">
