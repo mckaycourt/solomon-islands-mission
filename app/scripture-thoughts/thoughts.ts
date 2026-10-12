@@ -13,6 +13,27 @@ export type ScriptureThought = {
 
 export const scriptureThoughts: ScriptureThought[] = [
   {
+    slug: "alma-8-and-9",
+    title: "Alma 8 & 9",
+    day: "Day 47/100",
+    chapters: [
+      { label: "Alma 8", url: "https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/8?lang=eng" },
+      { label: "Alma 9", url: "https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/9?lang=eng" },
+    ],
+    blocks: [
+      { kind: "heading", text: "Don’t be hard-hearted or a stiff necked people, and don’t be a lost and fallen people." },
+      { kind: "paragraph", text: "We’re BACK!!!!!" },
+      { kind: "paragraph", text: "“Sacrifice brings forth the blessings of heaven” is one of the reminders and promises our son, McKay, promised us as he gave us priesthood blessings the morning of our flights returning to the SIHM. We know that’s true and we can feel the blessings." },
+      { kind: "paragraph", text: "This is Alma’s experience on his very difficult mission that begins in Alma 8." },
+      { kind: "paragraph", text: "As you read about his experience being turned away from the wicked people in Ammonihah, as you read about how much spiritual work he put into preparing to teach them, as you read about how much he prayed for them, when you read about them reviling him (reviling means to speak to someone in a disrespectful, insulting and even abusive way), when you read about them spitting on him, a vile and disgusting dismissive act of hate, we know that you’ll be able to relate to some days on the mission." },
+      { kind: "paragraph", text: "Fortunately, the Lord is in this work with us just as He was in it with Alma. He sends Alma an angel, new instructions, a missionary companion, some food and rest, and a spiritual mandate to go back and preach repentance to the people." },
+      { kind: "paragraph", text: "Our Lord and Savior is so good! He prepares the way, He provides a way, and He walks the way with us." },
+      { kind: "paragraph", text: "As you read about Alma and Amulek, think about your mission, your spiritual preparation, the blessings you need from your sacrifices. They will come! We promise!" },
+      { kind: "paragraph", text: "Finally, we’ve included this amazing talk from Elder Vai Sikahema (the islands were so well represented in this General Conference - it was awesome!) He quoted the great Elder Jeffrey R. Holland, In a general conference address over 20 years ago, President Jeffrey R. Holland asked: “Are the heavens open? Does God reveal His will to prophets and apostles as in days of old? That they are and that He does is the unflinching declaration of The Church of Jesus Christ of Latter-day Saints to all the world. And in that declaration lies the significance of Joseph Smith, the Prophet, for nearly 200 years now.”" },
+      { kind: "paragraph", text: "We LOVE YOU ALL SO MUCH! Go share the amazing restored gospel of Jesus Christ, full of priesthood power and authority, and built upon revelation to prophets and apostles! It is the greatest message in the entire world!" },
+    ],
+  },
+  {
     slug: "alma-6-and-7",
     title: "Alma 6 & 7",
     day: "Day 46/100",
