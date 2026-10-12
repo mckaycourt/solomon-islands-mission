@@ -13,6 +13,31 @@ export type ScriptureThought = {
 
 export const scriptureThoughts: ScriptureThought[] = [
   {
+    slug: "alma-10",
+    title: "Alma 10",
+    day: "Day 48/100",
+    chapters: [
+      { label: "Alma 10", url: "https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/10?lang=eng" },
+    ],
+    blocks: [
+      { kind: "paragraph", text: "We love this chapter, Elders and Sisters, especially for us missionaries!" },
+      { kind: "paragraph", text: "Last night, each of the missionaries in the Burns Creek District shared a scripture about unity and love after a FHE lesson from the Smiley’s on companionship strength’s and weaknesses." },
+      { kind: "paragraph", text: "Elder Smiley shared about his fishing pole and how each of the parts of the pole were so necessary to catch a fish. Although it might look like some parts of the pole had a more vital role, none of the parts really worked without the other parts. Sister Court pointed out how the parts were like the Doctrine of Christ, so soon there became a faith handle, a repentance part of the pole, a baptism part of the pole, the Holy Ghost part of the pole and an endure to the end part. The gospel of Jesus Christ can really be found in just about everything!" },
+      { kind: "paragraph", text: "We see illustrations of that in this chapter." },
+      { kind: "paragraph", text: "The people of Ammonihah are not listening to Alma. They are so hard hearted!" },
+      { kind: "paragraph", text: "So, like the parts of the fishing pole, and in unity with his companion, Amulek steps up." },
+      { kind: "paragraph", text: "Ever wonder why he gives his genealogy first? Might be numerous reasons but one that Sister Court and I discussed is that they needed a second witness and one that was from Ammonihah like them. But it wasn’t just that he was from Ammonihah like them, it was also that he too, was just LIKE them." },
+      { kind: "paragraph", text: "Amulek was totally into acquiring material possessions (v. 4 - “I have also acquired much riches) and he also didn’t have much of a spiritual background (v. 5 - “I never have known much of the ways of the Lord)." },
+      { kind: "paragraph", text: "Then he tells them the real truth hoping that they will see the opportunity in front of them. Yes he did know of the Lord, he had been called many times, but he just wouldn’t respond (v. 6 - “…I did harden my heart, for I was called many times and I would not hear…”)." },
+      { kind: "paragraph", text: "He shares with them his personal story, he testifies to how he was converted to the Lord, and he shows them how all parts of his life have improved since welcoming the Lord’s prophet into his family (v. 7-11)." },
+      { kind: "paragraph", text: "It is so powerful when we make it personal, Elders and Sisters. The people can argue about doctrine and they can recite to you things their preachers have taught them about our church. But it is almost impossible to dispute someone’s personal witness." },
+      { kind: "paragraph", text: "That is why in PMG, Chapter 10, Teach to Build Faith in Jesus Christ, under the section “Share Your Testimony” it says, “Sharing your testimony is a powerful way to invite the Spirit and help others feel His influence. One of the missions of the Holy Ghost is to testify of Heavenly Father and Jesus Christ. He often fulfills this in companionship with you as you bear testimony.” It also says, “When your companion is teaching, share your testimony to provide a second witness of what he or she has taught.”" },
+      { kind: "paragraph", text: "We’re so grateful that we can see that in action in this chapter." },
+      { kind: "paragraph", text: "Another thing to notice - Remember when Alma was the “vilest of all sinners” before he repented and was cleansed and became new by Jesus Christ? Well, look in verse 7 for an angel’s description of Alma to Amulek! Imagine that, Elders and Sisters, that can happen for each of us too! We can be holy! We can be chosen men and women of God!" },
+      { kind: "paragraph", text: "We love you so much and we pray for your strength and protection as you head out to fulfill your missionary purpose today!" },
+    ],
+  },
+  {
     slug: "alma-8-and-9",
     title: "Alma 8 & 9",
     day: "Day 47/100",
